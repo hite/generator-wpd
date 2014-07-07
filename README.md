@@ -1,11 +1,6 @@
 # generator-wpd [![Build Status](https://secure.travis-ci.org/hite/generator-wpd.png?branch=master)](https://travis-ci.org/hite/generator-wpd)
 
-=======
-generator-wpd
-=============
-
 quick start up to build modern webapp
-
 
 ## Getting Started
 

@@ -1,6 +1,10 @@
 # generator-wpd [![Build Status](https://secure.travis-ci.org/hite/generator-wpd.png?branch=master)](https://travis-ci.org/hite/generator-wpd)
 
-> [Yeoman](http://yeoman.io) generator
+=======
+generator-wpd
+=============
+
+quick start up to build modern webapp
 
 
 ## Getting Started
@@ -45,8 +49,4 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 MIT
-=======
-generator-wpd
-=============
 
-quick start up for WPD to build modern webapp

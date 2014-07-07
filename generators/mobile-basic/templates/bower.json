@@ -1,0 +1,19 @@
+{
+  "name": "mobile-basic",
+  "version": "0.0.1",
+  "authors": [
+    "liang wang <iamhite@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "zeptojs": "~1.1.3",
+    "seajs": "*"
+  }
+}

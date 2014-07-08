@@ -1,6 +1,7 @@
 # generator-wpd [![Build Status](https://secure.travis-ci.org/hite/generator-wpd.png?branch=master)](https://travis-ci.org/hite/generator-wpd)
 
-quick start up to build modern webapp
+quick start up to build modern webapp.
+>wpd means `W`eb `P`roduct `D`evelop;
 
 ## Getting Started
 
@@ -68,8 +69,9 @@ And now, you enter into the app directory to start coding. That is fast and esay
 ## License
 
 MIT
+------------------------
 
-[bootstrap]: getbootstrap.com/2.3.2 'bootstrap offical website'
+[bootstrap]: http://getbootstrap.com/2.3.2 'bootstrap offical website'  
 [grunt]: http://gruntjs.org 'grunt offical website'
 [bem]: http://bem.info 
 [jquery]: https://jquery.org/

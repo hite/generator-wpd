@@ -1,9 +1,9 @@
 {
   "name": "generator-wpd",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Yeoman generator",
   "license": "MIT",
-  "main": "app/index.js",
+  "main": "generators/mobile-basic/index.js",
   "repository": "hite/generator-wpd",
   "author": {
     "name": "liang wang",
@@ -17,7 +17,7 @@
     "test": "mocha"
   },
   "files": [
-    "app"
+    "generators/mobile-basic"
   ],
   "keywords": [
     "yeoman-generator"

@@ -71,8 +71,8 @@ And now, you enter into the app directory to start coding. That is fast and esay
 MIT
 ------------------------
 
-[bootstrap]: http://getbootstrap.com/2.3.2 'bootstrap offical website'  
-[grunt]: http://gruntjs.org 'grunt offical website'
+[bootstrap]: http://getbootstrap.com/2.3.2 
+[grunt]: http://gruntjs.org 
 [bem]: http://bem.info 
 [jquery]: https://jquery.org/
 [wpdcsscode]: http://mail.163.com

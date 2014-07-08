@@ -9,8 +9,6 @@ var WpdGenerator = yeoman.generators.Base.extend({
     init: function() {
         this.pkg = require('../../package.json');
 
-        this.log('the name ' + this.name);
-
         this.on('end', function() {
             if (!this.options['skip-install']) {
                 this.installDependencies();
@@ -46,7 +44,8 @@ var WpdGenerator = yeoman.generators.Base.extend({
     // copy bone files directory
     copyGMU: function() {
         this.log('>> copy tmpl files.')
-        this.copy('tmpl/_main.ftl','tmpl/main.ftl',{
+        this.directory('tmpl/lib','WEB-INF/tmpl/lib/');
+        this.copy('tmpl/_main.ftl','WEB-INF/tmpl/main.ftl',{
          appName: this.appName
         });
         this.log("GMU/dist','js//GMU")
@@ -84,6 +83,10 @@ var WpdGenerator = yeoman.generators.Base.extend({
         if (cssFrame == 'sass') {
           this.directory('style/','style/')
         };
+    },
+    copyTest : function(){
+      this.log('>> create test files.')
+      this.directory('test/','test/')
     },
     app: function() {
         this.log('>> create project meta files.')

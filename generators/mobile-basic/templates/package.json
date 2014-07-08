@@ -4,7 +4,7 @@
   "description": "seed to create basic website using seajs, zepto, gmu etc. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "mobile-basic"
@@ -12,6 +12,7 @@
   "author": "iamhite@gmail.com",
   "license": "mit",
   "devDependencies": {
+    "mocha": "*",
     <% if(_cssFrame == 'stylus'){%>
       "stylus": "^0.47.1",
       "grunt-contrib-stylus": "^0.18.0",

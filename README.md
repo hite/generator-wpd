@@ -48,22 +48,22 @@ And now, you enter into the app directory to start coding. That is fast and esay
 > mobile-basic
   
 + Aim at small project which does't have much pages. Such project page also have a simple pageflow , few widgets , basic interaction model
-+ technology stack.[zepto.js](http://zeptojs.com/) for DOM\EVENT util instead of jQuery on desktop;         [GMU](http://gmu.baidu.com/) for UI library;[seajs](seajs.org) for module management ; [grunt](http://gruntjs.org) for tasks building;
++ technology stack.[zepto.js](http://zeptojs.com/) for DOM\EVENT util instead of jQuery on desktop;         [GMU](http://gmu.baidu.com/) for UI library;[seajs](seajs.org) for module management ; [grunt](http://gruntjs.org) for tasks building; [mocha][] for test framework
  
 > mobile
 
 + Aim at bigger project which have some pages. Such project page  have a long pageflow , tabs\pageview\listview widgets using around the app . Due to complex page relationship, MVC structure is the best choice.
-+ technology stack.[backbone.js](http://backbonejs.org/) for MVC; Css framework in [{less}](lesscss.org) or [sass](http://sass-lang.com) or [stylus](http://learnboost.github.io/stylus), and make your choice; html scaffolding can be [bootstrap][] or [Intel's App Framework](http://app-framework-software.intel.com/documentation.php) ; [grunt][] or [gulp][] for tasks building; [BEM][] or [wpdcsscode][] for code style
++ technology stack.[backbone.js](http://backbonejs.org/) for MVC; Css framework in [{less}](lesscss.org) or [sass](http://sass-lang.com) or [stylus](http://learnboost.github.io/stylus), and make your choice; html scaffolding can be [bootstrap][] or [Intel's App Framework](http://app-framework-software.intel.com/documentation.php) ; [grunt][] or [gulp][] for tasks building; [BEM][] or [wpdcsscode][] for code style; [mocha][] or [jasmine][] for test framework 
 
 >desktop-basic
 
 + Aim at bussiness website building
-+ technology stack.[jquery][] for DOM\EVENT util ; CSS coding using [WPD Css code style][wpdcsscode];[requirejs](http://requirejs.org) for module management ; [grunt][] for tasks building; [sharkjs][] for UI library;
++ technology stack.[jquery][] for DOM\EVENT util ; CSS coding using [WPD Css code style][wpdcsscode];[requirejs](http://requirejs.org) for module management ; [grunt][] for tasks building; [sharkjs][] for UI library;[mocha][] or [jasmine][] for test framework 
 
 >desktop
 
 + Aim at flexiable configure project. use different tools chain in corroding to different bussiness system;
-+ technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;
++ technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## License
 
@@ -77,3 +77,5 @@ MIT
 [sharkjs]: http://sharkjs.org
 [foundation5]:http://foundation.zurb.com/develop/download.html
 [gulp]:(http://gulpjs.com)
+[mocha]:http://visionmedia.github.io/mocha/
+[jasmine]:https://github.com/pivotal/jasmine

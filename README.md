@@ -17,7 +17,7 @@ $ npm install -g yo
 If you are using npm 1.2.10 or above, this will also automatically install grunt and bower for you. If you're on an older version of npm, you will need to install them manually:
 
 ```bash
-\# For npm versions < 1.2.10.
+# For npm versions < 1.2.10.
 npm install -g grunt-cli bower
 ```
 

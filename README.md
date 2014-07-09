@@ -24,11 +24,11 @@ npm install -g grunt-cli bower
 
 ### what is generator-wpd
 
-Generator-wpd is a project generator for wpd group aimed to quickly set up a new webapp project develop enviroment including css framework, css validation, html scaffolding ,JS util, AMD or CMD modular, UI libary, grunt tasks, delopy tools etc.  
-Generator-wpd includes four submodules by now.
+Generator-wpd is a project generator for wpd group aimed to quickly set up a new webapp project develop enviroment including css framework, css validation, html scaffolding ,JS util, AMD or CMD modular, UI library, grunt tasks, delopy tools etc.  
+Generator-wpd includes four sub modules by now.
 
-+ moible-basic 
-+ moible <font color=green>(coming soon)</font>
++ mobile-basic
++ mobile <font color=green>(coming soon)</font>
 + desktop-basic <font color=green>(coming soon)</font>
 + desktop <font color=green>(coming soon)</font>
 
@@ -78,6 +78,6 @@ MIT
 [wpdcsscode]: http://mail.163.com
 [sharkjs]: http://sharkjs.org
 [foundation5]:http://foundation.zurb.com/develop/download.html
-[gulp]:(http://gulpjs.com)
+[gulp]:http://gulpjs.com
 [mocha]:http://visionmedia.github.io/mocha/
 [jasmine]:https://github.com/pivotal/jasmine

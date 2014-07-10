@@ -1,0 +1,14 @@
+{
+  "name": "desktop-basic",
+  "version": "0.0.1",
+  "description": "a simple webapp boiltemplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "mit",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

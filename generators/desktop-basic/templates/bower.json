@@ -1,0 +1,30 @@
+{
+  "name": "desktop-basic",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hite/generator-wpd",
+  "authors": [
+    "liang wang <iamhite@gmail.com>"
+  ],
+  "description": "a simple scaffolding to build basic web pages",
+  "main": "index.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "netease",
+    "wpd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "sharkjs": "https://github.com/hite/sharkjs.git",
+    "jqoteplus": "https://github.com/ntesmail/jqoteplus.git"
+  }
+}

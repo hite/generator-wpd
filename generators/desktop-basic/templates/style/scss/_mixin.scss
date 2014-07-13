@@ -1,0 +1,174 @@
+﻿@import "compass/css3";
+
+%f-cb:after{clear:both;content:".";display:block;height:0;visibility:hidden;overflow:hidden;}
+%f-cb{zoom:1;}
+%f-fl{float:left;display:inline;}
+%f-fr{float:right;display:inline;}
+%f-ribs{font-size: 0;/* 所有浏览器 */*word-spacing: -1px;/* IE6、7 */}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	%f-ribs{letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/}
+}
+%f-ib{
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	overflow: hidden;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+/* 函数定义 */
+@mixin bgc-transparency($degree) {
+  opacity: 1 - $degree/100;
+  -moz-opacity:1 - $degree/100;
+  filter: Alpha(Opacity=100 - $degree);
+  -ms-filter: alpha(opacity=100 - $degree);
+}
+
+@mixin text-overflow{
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+@mixin inline-block($value: 12px){
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	overflow: hidden;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+	font-size: $value;
+}
+
+@mixin gradient($type, $point, $startcolor, $endcolor, $bgcolor-ie){
+	background: -moz-linear-gradient($point, $startcolor, $endcolor); 
+	background: -webkit-gradient($type,$point,from($startcolor),to($endcolor));
+	background: -webkit-linear-gradient($point, $startcolor, $endcolor);
+	background: -o-linear-gradient($point, $startcolor, $endcolor);
+	background: -ms-linear-gradient($point, $startcolor,$endcolor);
+    background: linear-gradient($point, $startcolor,$endcolor);
+    background-color: #{$bgcolor-ie}\9;
+}
+
+@mixin scrollbar($r,$g,$b){
+	&::-webkit-scrollbar-track {background-color:#fff;}
+	&::-webkit-scrollbar {width: 8px;height: 8px;}
+	&::-webkit-scrollbar-button {width: 0;height: 0; display: none}
+	&::-webkit-scrollbar-corner {background-color: transparent;}
+	&::-webkit-scrollbar-thumb {
+		border: solid #ddd;border-width: 1px 0 1px 1px;@include gradient(linear, left, #e6e6e6, #c9c9c9, #d7d7d7)
+		/*background-color: rgba($r,$g,$b, 1.0);*/
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		border: solid #ddd;border-width: 1px 0 1px 1px;@include gradient(linear, left, #e6e6e6, #c9c9c9, #d7d7d7)
+		/*background-color: rgba($r,$g,$b, 1.0);*/
+	}
+	/*scrollbar-face-color: #CDCDCD; 
+	scrollbar-shadow-color: #CDCDCD; 
+	scrollbar-highlight-color: #CDCDCD; 
+	scrollbar-3dlight-color: #CDCDCD; 
+	scrollbar-darkshadow-color: #CDCDCD; 
+	scrollbar-track-color:#ECECEC; 
+	scrollbar-arrow-color: #EBEBEB;*/
+}
+
+@mixin scrollbarY{
+	overflow-x:hidden;
+	overflow-y:auto;
+	@include scrollbar;
+}
+
+@mixin bg-img($url) {
+	@if $url == "none" {
+	   
+	} @else {
+		background-image:url($url);
+		background-repeat:no-repeat;
+	}
+}
+
+@mixin bg-img-x-repeat($url) {
+	 @if $url == none {
+	   
+	 } @else {
+		background-image:url($url);
+		background-repeat:repeat-x;
+	 }
+}
+
+@mixin bg-img-y-repeat($url) {
+	@if $url == none {
+	   
+	} @else {
+		background-image:url($url);
+		background-repeat:repeat-y;
+	}
+}
+
+@mixin abs-position($top,$left) {
+    position:absolute;
+    top: $top;
+    left: $left;
+}
+
+/* 小箭头 */
+@mixin arrow{
+	display: block;
+	content: " ";
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+@mixin arrowdir($width, $direction, $bdc){
+	border: $width solid transparent;
+	/* 向上小三角 */
+	@if $direction == top {
+		border-top: 0;
+		border-bottom-color: $bdc;
+		_border-style: dashed dashed solid dashed;
+	}
+	/* 向下小三角 */
+	@else if $direction == bottom {
+		border-bottom: 0;
+		border-top-color: $bdc;
+		_border-style: solid dashed dashed dashed;
+	}
+	/* 向左小三角 */
+	@else if $direction == left {
+		border-left: 0;
+		border-right-color: $bdc;
+		_border-style: dashed solid dashed dashed;
+	}
+	/* 向右小三角 */
+	@else if $direction == right {
+		border-right: 0;
+		border-left-color: $bdc;
+		_border-style: solid dashed dashed dashed;
+	}
+}
+
+
+/* 块阴影：
+1、对象选择器 {box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色, ...;}
+2、ie6-8不支持 
+*/
+@mixin box-shadow($value...){
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+/* IE6-8实现方式：
+1、对象选择器 {filter: progid:DXImageTransform.Microsoft.Shadow(Color=’颜色值’, Direction=阴影角度（数值）, Strength=阴影半径（数值）);} 
+*/
+@mixin box-shadow-ie($c, $d, $s){
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='$c', direction=$d, strength=$s);
+}

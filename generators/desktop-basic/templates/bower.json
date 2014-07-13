@@ -25,6 +25,9 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "sharkjs": "https://github.com/hite/sharkjs.git",
-    "jqoteplus": "https://github.com/ntesmail/jqoteplus.git"
+    "jqoteplus": "https://github.com/ntesmail/jqoteplus.git",
+    "requirejs": "~2.1.14",
+    "requirejs-text": "~2.0.12",
+    "jquery-validate": "~1.13.0"
   }
 }

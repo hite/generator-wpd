@@ -1,0 +1,69 @@
+﻿/*
+CSS Reset
+参考kissy css reset和bootstrap css reset
+理念:1. reset的目的不仅是清除浏览器的默认样式，还需要进行重置，二者是紧密不可分的。
+     2. reset的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+     3. reset期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色:1. 按照html元素类别对代码进行了分组
+	 2. 只对存在浏览器差异的样式进行重置，不做多余的重置；
+	 3. 消除了部分因浏览器差异造成的bug
+	 4. 兼容IE6及以上主流浏览器；
+	 5. 重置打印样式。
+*/
+
+/* ------------------ 清除 ------------------- */
+/* 清除有差异的元素内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ 
+figure /* html5 elements html5元素 */{
+    margin: 0;
+    padding: 0;
+}
+
+/* 重置列表元素 */
+ul, ol {list-style: none outside none;}
+/* 经测试IE6/7中li标签list-style-position属性值为inside时，即使list-style-type为none，列表符仍然会占位，设为outside消除各浏览器中此差异 */
+
+/* 重置文本格式元素 */
+/* Firefox和Webkit默认样式q标签引用内容前后有引号*/
+q{quotes: none;}
+q:before, q:after{ 
+	content: ""; /*  */
+	content: none; 
+}
+
+/* 重置表单元素 */
+legend {color: #000;} /* for ie6 */
+fieldset{border: 0;} 
+button, input, select, textarea {font-size: 100%;} /* 使得表单元素在 ie 下能继承字体大小 */
+button, input {
+    line-height: normal; /* 调整Firefox 4+浏览器下，客户端样式表中设置了“!important”的“line-height”属性的input表单 */
+}
+
+/* 移除 Firefox 4+ 内部的内边距 */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+textarea {
+  overflow: auto; /* 清除IE中的垂直滚动条 */
+}
+
+/* 重置多媒体元素 */
+img {
+	border: 0;/* 去除链接里的img边框 */
+	vertical-align: top;/* 设置vertical-align 去掉a标签被撑高1px的问题 */
+}
+
+/* 重置表格元素 */
+table { border-collapse: collapse; border-spacing: 0; }/* 去掉各Table  cell 的边距并让其边重合 */
+th{text-align:inherit;}/* IE8 bug fixed: th 不继承 text-align*/
+
+/* 重置HTML5元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section, summary{
+    display: block;
+}

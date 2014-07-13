@@ -1,0 +1,97 @@
+/**
+* @name           首页
+* @author         Zlj
+* @desc             
+==================================== */
+@CHARSET "UTF-8";
+/* 函数定义 */
+/* 小箭头 */
+/* 块阴影：
+1、对象选择器 {box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色, ...;}
+2、ie6-8不支持 
+*/
+/* IE6-8实现方式：
+1、对象选择器 {filter: progid:DXImageTransform.Microsoft.Shadow(Color=’颜色值’, Direction=阴影角度（数值）, Strength=阴影半径（数值）);} 
+*/
+/* 左栏
+------------------- */
+/* 筛选块 */
+/* line 15, ../scss/welcome.scss */
+.p-welcome .filter { position: relative; line-height: 20px; margin-bottom: -5px; padding-right: 45px; }
+
+/* line 16, ../scss/welcome.scss */
+.p-welcome .filter .flt-label { float: left; display: inline; width: 60px; }
+
+/* line 17, ../scss/welcome.scss */
+.p-welcome .filter .flt-cnt { overflow: hidden; _float: left; }
+
+/* line 18, ../scss/welcome.scss */
+.p-welcome .filter .flt-cnt li { float: left; height: 20px; line-height: 20px; padding-right: 20px; }
+
+/* line 19, ../scss/welcome.scss */
+.p-welcome .filter .flt-action { position: absolute; right: 0; bottom: 0; }
+
+/* 筛选编辑块 */
+/* line 21, ../scss/welcome.scss */
+.p-fltedit .w-title { margin-bottom: 10px; }
+
+/*.p-fltedit .m-edit{margin-bottom: 10px;}*/
+/* line 23, ../scss/welcome.scss */
+.p-fltedit .m-edit .label { width: 65px; }
+
+/* line 24, ../scss/welcome.scss */
+.p-fltedit .m-actions { padding-left: 0; }
+
+/* 资讯提示 */
+/* line 26, ../scss/welcome.scss */
+.p-welcome .infotip { height: 20px; line-height: 20px; margin: 10px 0; }
+
+/* line 27, ../scss/welcome.scss */
+.p-welcome .infotip .num { font-weight: bold; font-size: 16px; color: #d90000; }
+
+/* 资讯列表 */
+/* line 29, ../scss/welcome.scss */
+.p-info { padding: 0 0 12px 0; }
+
+/* 右栏
+------------------- */
+/* 我的简历区域 */
+/* line 34, ../scss/welcome.scss */
+.p-welcome .myresume { margin-top: 15px; }
+
+/* line 35, ../scss/welcome.scss */
+.p-welcome .myresume .percent { margin-top: 47px; font-size: 18px; color: #5681ad; }
+
+/* line 37, ../scss/welcome.scss */
+.p-welcome .myresume .percent, .p-welcome .myresume .txt { text-align: center; }
+
+/* line 38, ../scss/welcome.scss */
+.p-welcome .myresume .percent .num { font-size: 30px; }
+
+/* line 39, ../scss/welcome.scss */
+.p-welcome .myresume .txt { color: #828282; }
+
+/* line 40, ../scss/welcome.scss */
+.p-welcome .myresume .userinfo { position: relative; height: 112px; margin-left: 10px; }
+
+/* line 41, ../scss/welcome.scss */
+.p-welcome .myresume .name { width: 95px; margin-bottom: 10px; overflow: hidden; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 16px; font-weight: bold; }
+
+/* line 43, ../scss/welcome.scss */
+.p-welcome .myresume .gender, .p-welcome .myresume .age { line-height: 20px; }
+
+/* line 44, ../scss/welcome.scss */
+.p-welcome .myresume .w-blbtn { position: absolute; left: 0; bottom: 0; padding: 0 12px; }
+
+/* 反馈提示区 */
+/* line 47, ../scss/welcome.scss */
+.p-welcome .fbtip { margin-bottom: 10px; color: #828282; }
+
+/* line 48, ../scss/welcome.scss */
+.p-welcome .fbtip .quote { margin: -5px 0 0 -10px; font-family: simsun; font-size: 21px; vertical-align: middle; }
+
+/* line 49, ../scss/welcome.scss */
+.p-welcome .fbtip .txt { width: 180px; }
+
+/* line 50, ../scss/welcome.scss */
+.p-welcome .fbtip .txt .quote { margin: 0; }

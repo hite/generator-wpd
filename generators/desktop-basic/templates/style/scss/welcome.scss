@@ -1,0 +1,50 @@
+﻿/**
+* @name           首页
+* @author         Zlj
+* @desc             
+==================================== */
+
+@CHARSET "UTF-8";
+ 
+@import "mixin";
+
+/* 左栏
+------------------- */
+
+/* 筛选块 */
+.p-welcome .filter{position: relative;line-height: 20px;margin-bottom: -5px;padding-right: 45px;}
+.p-welcome .filter .flt-label{float: left;display: inline;width: 60px;}
+.p-welcome .filter .flt-cnt{overflow: hidden;_float: left;}
+.p-welcome .filter .flt-cnt li{float: left;height: 20px;line-height: 20px;padding-right: 20px;}
+.p-welcome .filter .flt-action{position: absolute;right: 0;bottom: 0;}
+/* 筛选编辑块 */
+.p-fltedit .w-title{margin-bottom: 10px;}
+/*.p-fltedit .m-edit{margin-bottom: 10px;}*/
+.p-fltedit .m-edit .label{width: 65px;}
+.p-fltedit .m-actions{padding-left: 0;} 
+/* 资讯提示 */
+.p-welcome .infotip{height: 20px;line-height: 20px;margin: 10px 0;}
+.p-welcome .infotip .num{font-weight: bold;font-size: 16px;color: #d90000;}
+/* 资讯列表 */
+.p-info{padding: 0 0 12px 0;}
+
+/* 右栏
+------------------- */
+/* 我的简历区域 */
+.p-welcome .myresume{margin-top: 15px;}
+.p-welcome .myresume .percent{margin-top: 47px;font-size: 18px;color: #5681ad;}
+.p-welcome .myresume .percent,
+.p-welcome .myresume .txt{text-align: center;}
+.p-welcome .myresume .percent .num{font-size: 30px;}
+.p-welcome .myresume .txt{color: #828282;}
+.p-welcome .myresume .userinfo{position: relative;height: 112px;margin-left: 10px;}
+.p-welcome .myresume .name{width: 95px;margin-bottom: 10px;overflow: hidden;@include text-overflow;font-size: 16px;font-weight: bold;}
+.p-welcome .myresume .gender,
+.p-welcome .myresume .age{line-height: 20px;}
+.p-welcome .myresume .w-blbtn{position: absolute;left: 0;bottom: 0;padding: 0 12px;}
+
+/* 反馈提示区 */
+.p-welcome .fbtip{margin-bottom: 10px;color: #828282;}
+.p-welcome .fbtip .quote{margin: -5px 0 0 -10px;font-family: simsun;font-size: 21px;vertical-align: middle;}
+.p-welcome .fbtip .txt{width: 180px;}
+.p-welcome .fbtip .txt .quote{margin: 0;}

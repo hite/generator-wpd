@@ -1,0 +1,104 @@
+﻿/************************************************************
+* Project:         网易云简历一期
+* Author:          Zlj
+* Date:            2013-08-26
+* Desc:
+* Copyright:       NetEase.com Inc. All rights reserved.
+************************************************************/
+
+@CHARSET "UTF-8";
+ 
+@import "mixin";
+ 
+@import "reset"; /* 重置 */
+@import "base";  /* 默认 */
+ 
+@import "module"; 
+@import "widget"; 
+ 
+@import "function";
+
+/* 整体框架结构(主内容区高度自适应)
+------------------- */ 
+html,body{height: 100%;text-align: center;overflow: hidden;} 
+.g-doc{position: relative;min-width: 960px;width: auto;height: 100%;overflow-y:auto;}/* 保证页面高度自适应关键属性 */
+.g-wrap{width: 960px;height: 100%;margin: 0 auto;text-align: left;}
+/*.g-hd{position: relative;z-index: 1;height: 65px;margin-bottom: -66px;border-bottom: 1px solid #1867b6;background-color: #3a7ccc;}
+.g-bd{position: relative;width: 100%;min-height: 100%;height: auto !important;_height: 100%;}
+.g-bdc{padding: 66px 0 70px;}
+.g-bdct .g-wrap{padding: 16px 0 25px;}
+.g-bd,
+.g-bdct .g-wrap{background: #f7f7f7 url("../img/main-bg.png") repeat;}
+.g-ft{position: relative;height: 69px;line-height: 69px;margin-top: -70px;border-top: 1px solid #c8c8c8;background-color: #f7f7f7;color: #848585;}
+*/
+.g-hd{position: fixed;top: 0;left: 0;right: 0;width: 100%;z-index: 4;height: 65px;border-bottom: 1px solid #1867b6;background-color: #3a7ccc;}
+.g-bd{position: absolute;left: 0;right: 0;top: 66px;bottom: 0;width: 100%;overflow-y: auto;overflow-x: hidden;}
+.g-bdc{min-height: 100%;}
+.g-bdct .g-wrap{padding: 16px 0 25px;}
+.g-bd,
+.g-bdct .g-wrap{background: #f7f7f7 url("../img/mainbg.png") repeat;}
+.g-bdct{padding-bottom: 115px;}
+.g-ft{position: relative;height: 114px;margin-top: -115px;border-top: 1px solid #c8c8c8;background-color: #f7f7f7;color: #8f9090;}
+.g-mn{float: left;width: 720px;margin-right: 10px;}
+.g-sd{float: left;width: 230px;}
+.g-sd-fixed{position: fixed;top: 66px;margin-left: 730px;z-index: 2;}
+
+/* 带边框内容区块 */
+.g-box,
+.g-asbox,
+.g-sdbox{padding: 12px 11px;border: 1px solid;@include border-radius(2px);@include single-box-shadow(rgba(0, 0, 0, 0.15), 0px, 1px, 1px, false);}
+/* 主内容区块 */
+.g-box,
+.g-sdbox{border-color: #d1d1d1;background-color: #fff;}
+/* 辅助内容区块 */
+.g-asbox{margin-bottom: 10px;border-color: #afc2d1;background-color: #e6edf6;}
+/* 右侧主要内容区块 */
+.g-sdbox{padding: 0;}
+/* 首页banner */
+.g-banner{width: 100%;background-color: #e6e6e6;}
+.g-banner-ct{width: 100%;height: 334px;background: url("../img/banner/index-banner.jpg");}
+
+
+
+/* 内嵌版修改
+------------------- */ 
+.g-iframe .g-doc{overflow: hidden;}
+.g-iframe .g-hd{position: absolute;right: auto;bottom: 0;height: 100%;width: 180px;border-bottom: none;background: #fff inline-image("../img/base64/repeat-l.png") right top repeat-y;}
+.g-iframe .g-bd{left: 180px;top: 0;width: auto;height: 100%;}
+.g-iframe .g-bdct{padding: 0 20px 35px;}
+.g-iframe .g-bd,
+.g-iframe .g-bdct .g-wrap{background: #e7e7e7;}
+.g-iframe .g-wrap{margin: 0;}
+.g-iframe .m-choosetmpl .g-wrap{margin: 0 auto;}
+
+.g-iframe .g-asbox{background-color: #f4f4f4;}
+.g-iframe .g-box,
+.g-iframe .g-asbox,
+.g-iframe .g-sdbox{border-color: #e1e1e1;@include box-shadow(0px 1px 1px rgba(0, 0, 0, 0.1));}
+.g-iframe .g-sd-fixed{top: 0;}
+
+.g-iframe a{color: #3a88bf;}
+.g-iframe a:hover{color: #286b9b;}
+
+.g-iframe .m-head{padding-top: 0;}
+.g-iframe .m-head .logowrap{padding: 14px 0 14px 20px;border-bottom: 1px solid #dedede;background: #e6edf6 inline-image("../img/base64/repeat-l-nav.png") right top repeat-y;}
+.g-iframe .m-head .logo{width: 123px;height: 23px;background: url("../img/logo-iframe.png");}
+.g-iframe .m-head .nav{margin: 0;}
+.g-iframe .m-head .nav .item{float: none;width: auto;height: 30px;margin: 0 0 5px 0;border-left: 3px solid transparent;padding-left: 18px;}
+.g-iframe .m-head .nav a{text-align: left;color: #333;@include text-shadow(none);}
+.g-iframe .m-head .nav .item:hover{background: none;}
+.g-iframe .m-head .nav .item-selected,
+.g-iframe .m-head .nav .item-selected:hover{border-color: #bfbfbf;background: #e7e7e7 inline-image("../img/base64/repeat-l-sel.png") right top repeat-y;}
+.g-iframe .m-head .nav .item-selected a,
+.g-iframe .m-head .nav .item-selected a:hover{color: #333;}
+
+.g-iframe .m-sdcnt .cnt-hd{padding-top: 5px;border-bottom: none;background-color: #fff;}
+
+.g-iframe .w-ietip{display: none!important}
+
+/*.g-iframe .w-blbtn{border-color: #48a316;background: #4ab50f;}*/
+
+/* 打印样式
+------------------- */ 
+#rsmprint .w-sideact{display: none;}
+#rsmprint.g-iframe .g-bd{height: auto;}/* 暂解决内嵌版打印截断问题，原因不知 */

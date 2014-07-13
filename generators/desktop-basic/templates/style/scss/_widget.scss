@@ -1,0 +1,162 @@
+﻿@import "icon";
+
+/* button
+------------------- */
+.w-blbtn,
+.w-grbtn{display: inline-block;height: 26px;line-height: 26px;padding: 0 23px;border: 1px solid;@include border-radius(2px, 2px);@include single-box-shadow(rgba(0, 0, 0, 0.25), 0px, 1px, 1px, false);background: url("../img/repeat-x.png") repeat-x;cursor: pointer;}
+/* 蓝色按钮 */
+.w-blbtn{margin-right: 4px;border-color: #316bb4;@include single-text-shadow(0, 1px, 1px, false, rgba(0, 0, 0, 0.5));background-position: 0 -203px;}
+.w-blbtn,
+.w-blbtn:hover{color: #fff!important;}
+.w-blbtn:hover{background-position: 0 -411px;}
+/* 灰色按钮 */
+.w-grbtn{border-color: #d2d2d2;background-position: 0 -167px;}
+.w-grbtn{color: #333!important;}
+.w-grbtn:hover{color: #015ab4!important;}
+
+/* button扩展
+------------------- */
+.w-blbtn-disabled{border-color: #acacac;text-shadow: none;cursor: default;}
+.w-blbtn-disabled,
+.w-blbtn-disabled:hover{color: #666;background-position: 0 -375px;}
+.w-grbtn-select{padding-right: 0;}
+.w-grbtn-select .icon-arrow-down{margin-top: 4px;}
+
+/* 登录按钮 */
+.w-blbtn-login,
+.w-grbtn-register{height: 32px;line-height: 32px;padding: 0 28px;@include border-radius(4px, 4px);font-size: 14px;}
+/* 注册按钮 */
+.w-grbtn-register{border-color: #acacac;background-position: 0 -245px;}
+
+/* 各种框的长度
+------------------- */
+.w-width75 { width: 75px; }
+.w-width76{width: 76px;}
+.w-width84{width: 84px;}
+.w-width90{width: 90px;}
+.w-width97{width: 97px;}
+.w-width105{width: 105px;}
+.w-width120{width: 120px;}
+.w-width147{width: 147px;}
+.w-width175{width: 175px;}
+.w-width200{width: 200px;}
+.w-width480{width: 480px;}
+.w-width530{width: 530px;}
+
+/* 模板缩略图
+------------------- */
+.w-template{display: block;width: 228px;height: 322px;margin: 0 auto;border: 1px solid #d3d3d3;cursor: pointer;}
+.w-template:hover,
+.w-template-selected{border-color: #3d79cc;}
+.w-template-simple1{background: url("../img/template/small/simple1_1.jpg");}
+.w-template-simple2{background: url("../img/template/small/simple2_1.jpg");}
+.w-template-position1{background: url("../img/template/small/position1_1.jpg");}
+.w-template-creative1{background: url("../img/template/small/creative1_1.jpg");}
+.w-template-comingsoon{background: url("../img/template/small/comingsoon.jpg");cursor: default;}
+.w-template-comingsoon:hover{border-color: #d3d3d3;}
+
+/* 模板预览大图
+------------------- */
+.w-templatel{display: block;width: 715px;height: 1012px;margin: 0 auto;}
+.w-templatel-simple1{background: url("../img/template/large/simple1_1.jpg");}
+.w-templatel-simple2{background: url("../img/template/large/simple2_1.jpg");}
+.w-templatel-position1{background: url("../img/template/large/position1_1.jpg");}
+.w-templatel-creative1{background: url("../img/template/large/creative1_1.jpg");}
+
+/* 选择模板预览图
+------------------- */
+.w-templatem{display: block;width: 660px;height: 934px;margin: 0 auto;}
+.w-templatem-simple1{background: url("../img/template/medium/simple1_1.jpg");}
+.w-templatem-simple2{background: url("../img/template/medium/simple2_1.jpg");}
+.w-templatem-position1{background: url("../img/template/medium/position1_1.jpg");}
+.w-templatem-creative1{background: url("../img/template/medium/creative1_1.jpg");}
+
+/* 复选框
+------------------- */
+.w-chbox{@extend %f-ribs;height: 26px;line-height: 26px;}
+.w-chbox .icon-checkbox{margin-top: 3px;}
+.w-chbox .icon-checkbox input{display: none;}
+.w-chbox .label-chbox{@extend %f-ib;cursor: pointer;}
+
+/* 文字和按钮组合
+------------------- */
+.w-txticon{@extend %f-ribs;height: 28px;line-height: 28px;}
+.w-txticon .w-icon{margin-top: 4px;}
+.w-txticon .txt{@extend %f-ib;}
+
+/* 遮罩弹框
+------------------- */
+.w-maskdialog,
+.w-mask,
+.w-dialog{position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;}
+.w-maskdialog{z-index: 10;}
+.w-dialog{overflow-x: hidden;overflow-y: auto;}
+.w-mask{position: fixed;background-color: #000;@include bgc-transparency(30);}
+
+/* 小三角
+------------------- */
+.w-arrow{position: absolute;@include arrow;width: 16px;height: 8px;}
+.w-arrow .arrow-bdc,
+.w-arrow .arrow-bgc{position: absolute;}
+.w-arrow-left .arrow-bdc{top: 1px;@include arrowdir(7px, left, #fff9cc);}
+.w-arrow-left .arrow-bgc{top: 0;@include arrowdir(8px, left, #fdec7b);}
+.w-arrow-right .arrow-bdc{top: 1px;@include arrowdir(7px, right, #fff9cc);}
+.w-arrow-right .arrow-bgc{top: 0;@include arrowdir(8px, right, #fdec7b);}
+.w-arrow-top .arrow-bdc{left: 1px;bottom: 0;@include arrowdir(7px, top, #fff9cc);}
+.w-arrow-top .arrow-bgc{left: 0;bottom: 0;@include arrowdir(8px, top, #fdec7b);}
+.w-arrow-down .arrow-bdc{left: 1px;@include arrowdir(7px, down, #fff9cc);}
+.w-arrow-down .arrow-bgc{left: 0;@include arrowdir(8px, down, #fdec7b);}
+
+
+/* 默认头像
+------------------- */
+/* 头像 */
+.w-ava{width: 75px;height: 95px;}
+
+/* IE6 7访问提示
+------------------- */
+.w-ietip{display: none;*display: block;position: absolute;top: 0;left: 0;right: 0;z-index: 1000;width: 100%;height: 29px;line-height: 29px;border-bottom: 1px solid #cfac2f;text-align: center;color: #333;background-color: #faf6b5;}
+.w-ietip a,
+.w-ietip a:hover{text-decoration: underline;}
+
+/* 右侧回到顶部&反馈
+------------------- */
+.w-sideact{position: fixed;right: 55px;bottom: 155px;}
+.w-sideact .w-icon-normal{display: block;cursor: pointer;}
+
+/* 证书输入框项
+------------------- */
+.w-certitem{@extend %f-fl;position: relative;height: 18px;line-height: 18px;overflow: hidden;margin: 3px 5px;padding-right: 18px;@include border-radius(2px);background-color: #e2e2e2;}
+.w-certitem .title{padding: 0 10px;color: #999;background-color: #eaeaea;}
+.w-certitem .icon-ppnlclose{position: absolute;right: -1px;top: -1px;}
+.w-certitem-tip{padding-right: 0;color: #999;background: transparent;}
+.w-certitem-edit{width: 130px;margin-right: 0;margin-left: 0;padding: 0;}
+.w-certitem-edit,
+.w-certitem-edit input{background-color: transparent;}
+.w-certitem-edit input{height: 18px;line-height: 18px;width: 100%;border: none;}
+.w-certitem-edit span{position: absolute;top: 0;left: 0;height: 1px;overflow: hidden;visibility: hidden;}
+
+
+/* 其他
+------------------- */
+/* 名企标签 */
+.w-famousent{display: inline-block;height: 16px;line-height: 16px;padding: 0 10px;border: 1px solid #a8bfcf;font-size: 12px;font-weight: normal;background-color: #f4fbff;}
+/* 各区域标题 */
+.w-title{font-size: 14px;font-weight: bold;}
+.w-mtitle{font-size: 18px;font-weight: bold;color: #0d0d0d}
+/* 面包屑 */
+.w-crumb{margin-bottom: 10px;}
+/* 编辑简历区域头部 */
+.w-edithd{height: 34px;line-height: 34px;padding: 0 21px 0 18px;border-bottom: #d9d9d9;background: #e9eff7 url(../img/repeat-x.png) 0 -123px repeat-x;font-size: 14px;font-weight: bold;}
+/* loading */
+.w-loading{@extend %f-ib;width: 16px;height: 16px;background-image: inline-image("../img/base64/loading.gif");}
+/* 表单错误提示 */
+.w-error{display: none;position: absolute;left: 0;top: 100%;color: #f33;}
+/* 输入域 */
+.w-textarea{padding: 5px;line-height: 14px;border: 1px solid #e2e2e2;background-color: #fff;overflow-y: auto;}
+/* 输入框提示语 */
+.w-placeholder{position: absolute;left: 5px;height: 24px;line-height: 24px;top: 0;color: #999;}
+/* 帮助提示语 */
+.w-assist{font-size: 12px;color: #999;}
+/* 内容为空提示 */
+.w-emptip{line-height: 140px;text-align: center;font-size: 16px;color: #666;}

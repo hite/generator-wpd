@@ -1,4 +1,4 @@
-<#include "/tmpl/lib/const.ftl">
+<#include "const.ftl">
 
 <#macro header module="">
     <div class="g-hd">
@@ -114,6 +114,7 @@
             <meta name="Version" content="1.0">
             <#--cssmerge_begin:core.css-->
             <link type="text/css" href="${cssRoot}/style/css/global.css" rel="stylesheet"/>
+            <link type="text/css" href="${jsRoot}/bower_components/sharkjs/dist/sharkjs-0.0.1.min.css" rel="stylesheet"/>
             <link rel="shortcut icon" href="${miscPath}/favicon.ico"  type="image/x-icon" />
             <#--cssmerge_end:core.css-->
             ${cssFiles}
@@ -177,7 +178,11 @@
    
             </script>
             <#--jsmerge_begin:c0.js-->
-            <script type="text/javascript" src="${jsRoot}/js/lib/require.js"></script>
+            <script type="text/javascript" src="${jsRoot}/bower_components/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="${jsRoot}/bower_components/requirejs/require.js"></script>
+            <script type="text/javascript" src="${jsRoot}/bower_components/requirejs-text/text.js"></script>
+            <script type="text/javascript" src="${jsRoot}/bower_components/jqoteplus/src/jqoteplus.js"></script>
+            <script type="text/javascript" src="${jsRoot}/bower_components/sharkjs/dist/sharkjs-0.0.1.js"></script>
             <script type="text/javascript" src="${jsRoot}/js/lib/require_config.js"></script>
 
 

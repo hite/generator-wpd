@@ -1,0 +1,37 @@
+﻿@import "mixin";
+
+*{@include scrollbar(203, 203, 203);}
+
+html {
+	*overflow:auto;/* 清除IE6-7中的默认垂直滚动条 */
+    -webkit-text-size-adjust: 100%;/* 在不禁止用户缩放的情况下避免iOS设备方向调整后自动校正字体大小 */
+    -ms-text-size-adjust: 100%;
+}
+
+/* 设置默认字体 */ 
+body,
+button, input, select, textarea /* for ie */ {
+    outline: 0;font: 12px/1.5 "Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3", Microsoft Yahei, \5b8b\4f53, sans-serif;color: #333;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+/* 设置文本格式元素 */
+a,a:hover { text-decoration: none; }
+a{color: #005bb7;}
+a:hover{color: #3a7ccc;}
+
+/* 设置多媒体元素 */
+/* 响应式图片(保证图片大小自适应不超出父元素) ，IE6需要expression才能兼容，开销大，不做兼容处理*/
+img{
+	/*max-width: 100%;*/
+	width: auto\9; 
+    height: auto; /* 设置width和height auto以避免IE8中max-width导致高度无法自适应，见https://drupal.org/node/1782090 */
+    -ms-interpolation-mode: bicubic;/* 针对IE7，在图片放大的时候不会过度失真(测试为马赛克效果) http://www.aoao.org.cn/blog/2009/03/img-ms-interpolation-mode/*/
+}
+
+/* 表单元素 */
+textarea{resize: none;}/* 禁用文本输入域的大小调节 */
+input[type="submit"], 
+input[type="button"],
+button{@include box-sizing(content-box);}
+table{table-layout: fixed;}

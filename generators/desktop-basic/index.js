@@ -9,30 +9,16 @@ var WpdGenerator = yeoman.generators.Base.extend({
     init: function() {
         this.pkg = require('../../package.json');
 
-//        this.on('end', function() {
-//            if (!this.options['skip-install']) {
-//                this.installDependencies();
-//            }
-//        });
+        this.on('end', function() {
+            if (!this.options['skip-install']) {
+                this.installDependencies();
+            }
+        });
     },
 
-    askFor: function() {
-        var done = this.async();
-
+    greet: function() {
         // Have Yeoman greet the user.
         this.log(yosay('Welcome to the marvelous Wpd generator!'));
-
-        var prompts = [{
-            name: 'appName',
-            message: 'Would you like to give me your website title ?',
-            default: 'netease website wap version'
-        }];
-
-        this.prompt(prompts, function (props) {
-          this.appName = props.appName;
-
-          done();
-        }.bind(this));
     },
 
     projectfiles: function() {
@@ -45,9 +31,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
     copyGMU: function() {
         this.log('>> copy tmpl files.')
         this.directory('tmpl/lib','WEB-INF/tmpl/lib/');
-        this.copy('tmpl/_main.ftl','WEB-INF/tmpl/main.ftl',{
-         appName: this.appName
-        });
+        this.copy('tmpl/_main.ftl','WEB-INF/tmpl/main.ftl');
         this.log("GMU/dist','js//GMU")
         this.directory('GMU/dist/', 'js/GMU/');
         this.log("mkdir('misc')")
@@ -59,23 +43,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
         this.directory('misc/', 'misc/');
     },
     askCSSFrame: function() {
-        var done = this.async();
-
-        // Have Yeoman greet the user.
-        this.log('choose your css framework. ');
-
-        var prompts = [{
-            type: 'input',
-            name: 'cssFrame',
-            message: 'choose your css framework, Less or SASS or Stylus?',
-            default: 'sass'
-        }];
-
-        this.prompt(prompts, function(props) {
-            this._cssFrame = props.cssFrame;
-
-            done();
-        }.bind(this));
+        this._cssFrame = 'sass';
     },
 
     copyStyle: function() {

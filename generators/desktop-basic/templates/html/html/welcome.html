@@ -1,0 +1,397 @@
+    
+
+    <!DOCTYPE html>
+    <html lang="zh_CN"> 
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+            <title>首页-网易云简历</title>
+            <meta http-equiv="Content-Style-Type" content="text/css">
+            <meta http-equiv="Content-Script-Type" content="text/javascript">
+            <meta name="Author" content="netease">
+            <meta name="Version" content="1.0">
+            <link type="text/css" href="/generator-wpd/generators/desktop-basic/templates/style/css/global.css" rel="stylesheet"/>
+            <link type="text/css" href="/generator-wpd/generators/desktop-basic/templates/bower_components/sharkjs/dist/sharkjs-0.0.1.min.css" rel="stylesheet"/>
+            <link rel="shortcut icon" href="/generator-wpd/generators/desktop-basic/templates/misc/favicon.ico"  type="image/x-icon" />
+                    <link type="text/css" href="/generator-wpd/generators/desktop-basic/templates/style/css/welcome.css" rel="stylesheet"/>
+
+            <script type="text/javascript">
+                var gUid = "",gDomain = "",gContextPath = "/generator-wpd/generators/desktop-basic/templates", gCssRoot = "/generator-wpd/generators/desktop-basic/templates", gStylePath = "/generator-wpd/generators/desktop-basic/templates/style",gIsLogin = false,gHost = 'jianli.mail.163.com',gMiscPath = '/generator-wpd/generators/desktop-basic/templates/misc';
+                var gAjaxErrorMapping = {
+                    400:"参数格式不合法或缺少必须参数",
+                    401:"未登录",
+                    403:"非法访问",
+                    404:"请求处理的对象不存在",
+                    409:"请求处理的对象已存在",
+                    500:"服务端错误"
+                };
+                var formatDate = function(value, fmt){
+                    if (typeof(value) == "number" || typeof(value) == "string"){
+                        value = new Date(value);
+                    }
+                    var o = {
+                        "y+": value.getFullYear(), // 年份      
+                        "M+": value.getMonth() + 1, //月份        
+                        "d+": value.getDate(), //日        
+                        "h+": value.getHours() % 12 == 0 ? 12 : value.getHours() % 12, //小时        
+                        "H+": value.getHours(), //小时        
+                        "m+": value.getMinutes(), //分        
+                        "s+": value.getSeconds(), //秒        
+                        //"q+" : Math.floor((value.getMonth()+3)/3), //季度        
+                        "S": value.getMilliseconds() //毫秒        
+                    };
+                    var week = {
+                        "0": "\u65e5",
+                        "1": "\u4e00",
+                        "2": "\u4e8c",
+                        "3": "\u4e09",
+                        "4": "\u56db",
+                        "5": "\u4e94",
+                        "6": "\u516d"
+                    };
+                    if (/(y+)/.test(fmt)) {
+                        fmt = fmt.replace(RegExp.$1, (value.getFullYear() + "").substr(4 - RegExp.$1.length));
+                    }
+                    if (/(E+)/.test(fmt)) {
+                        fmt = fmt.replace(RegExp.$1, ((RegExp.$1.length > 1) ? (RegExp.$1.length > 2 ? "\u661f\u671f" : "\u5468") : "") + week[value.getDay() + ""]);
+                    }
+                    for (var k in o) {
+                        if (new RegExp("(" + k + ")").test(fmt)) {
+                            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                        }
+                    }
+                    return fmt;
+                };
+                var escapeHTML = function (_html) {
+                    if (!_html) {
+                        return '';
+                    }
+                    return _html.replace(/[\u0000]/g, "").replace(/&/g, '&amp;').replace(/>/g, '&gt;').replace(/</g, '&lt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                };
+                var liveTextarea = function(_html){
+                    var html = _html || '';
+                    return html.replace(/\n/g,'<br/>');
+                };
+   
+            </script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/bower_components/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/bower_components/requirejs/require.js"></script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/bower_components/requirejs-text/text.js"></script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/bower_components/jqoteplus/src/jqoteplus.js"></script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/bower_components/sharkjs/dist/sharkjs-0.0.1.js"></script>
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/js/lib/require_config.js"></script>
+
+
+            <script type="text/javascript" src="/generator-wpd/generators/desktop-basic/templates/js/app/welcome.js"></script>
+        </head>
+        <body >
+            <div class="g-doc">
+    <div class="g-hd">
+            <div class="g-wrap">
+                <div class="m-head f-cb">
+                    <h1 class="logo f-fl"><a href="/generator-wpd/generators/desktop-basic/templates/welcome.do">网易云简历</a></h1>
+                    <ul class="nav f-fl">
+                        <li class="item item-selected"><a href="/generator-wpd/generators/desktop-basic/templates/welcome.do">首页</a></li>
+                        <li class="item "><a href="/generator-wpd/generators/desktop-basic/templates/myresume/view.do">我的简历</a></li>
+                        <li class="item "><a href="/generator-wpd/generators/desktop-basic/templates/myfavour.do">我的收藏</a></li>
+                    </ul>
+                        <div class="userinfo f-fr ">
+                            <div class="username js-userinfo">
+                                <div class="inner">
+                                            <img id="topbarAvatar"  class="img" src="/generator-wpd/generators/desktop-basic/templates/misc/img/avatar/32.png">
+                                    <span class="txt js-nickname">(无昵称)</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+                <div class="g-bd p-welcome">
+
+    <div class="g-bdc">
+    <!-- banner区域 20130831 Zlj -->
+    <!-- 内容区 20130831 Zlj -->
+    <div class="g-bdct">
+    <div class="g-wrap f-cb">
+    <!-- 主内容区 20130831 Zlj -->
+    <div class="g-mn">
+    <!-- 筛选条件区 20130831 Zlj -->
+    <div class="g-asbox">
+        <!-- 筛选条件展示 20130831 Zlj -->
+        <div class="filter f-cb">
+            <div class="flt-label">筛选条件：</div>
+            <ul class="flt-cnt">
+                <li><span class="w-icon icon-location"></span>浙江省杭州市</li>
+                <li>地区不限</li>
+                <li>行业不限</li>
+                <li>职位不限</li>
+                <li>月薪不限</li>
+            </ul>
+            <a href="javascript:void(0)" class="flt-action f-ribs">
+                <span class="w-icon icon-setting"></span>
+                <span class="f-ib">编辑</span>
+            </a>
+            <div class="m-ppnl m-ppnl-hasarrow m-ppnl-intention">
+                <div class="ppnl-ct">
+                    <div class="cnt">同学，快来设置你的求职意向，我们将为你推送个性化的求职信息。</div>
+                    <div class="w-arrow w-arrow-top">
+                        <span class="arrow-bgc"></span>
+                        <span class="arrow-bdc"></span>
+                    </div>
+                </div>
+                <div class="ppnl-act">
+                    <a title="关闭" class="w-icon icon-ppnlclose" hidefocus="true" href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="m-tabs">
+        <li class="tab tab-selected"><a href="javascript:;" hidefocus="true">今日推送</a></li>
+        <li class="tab"><a href="javascript:;" hidefocus="true">校园招聘</a></li>
+        <li class="tab"><a href="javascript:;" hidefocus="true">宣讲会</a></li>
+        <li class="tab"><a href="javascript:;" hidefocus="true">招聘会</a></li>
+        <li class="tab"><a href="javascript:;" hidefocus="true">实习兼职</a></li>
+        <li class="tab"><a href="javascript:;" hidefocus="true">职位推荐</a></li>
+    </ul>
+
+    <!-- 资讯列表区 20130831 Zlj -->
+    <div class="g-box">
+        <div class="m-infolst">
+            <div class="lst-bd">
+                <div class="item">
+                    <span class="w-icon-normal icon-normal-process"></span>
+                    <div class="item-cnt">
+                        <h3 class="w-title">
+                            <a href="#">[校园招聘] 网易公司校园招聘武汉站</a>
+                        </h3>
+                        <p class="cnt">截止时间：2014-04-30 14:00</p>
+                        <p class="cnt">工作地点：杭州</p>
+                        <p class="cnt cnt-src">
+                            来源：<a href="#">智联招聘</a>
+                        </p>
+                    </div>
+                    <a href="javascript:;" hidefocu="true" class="item-act">
+                        <span class="w-icon icon-unstar"></span>
+                        <span class="txt">收藏</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <span class="w-icon-normal icon-normal-teachin"></span>
+                    <div class="item-cnt">
+                        <h3 class="w-title">
+                            <a href="#">[宣讲会] 网易杭州网络有限公司</a>
+                            <span class="w-famousent">名企</span>
+                        </h3>
+                        <p class="cnt">时间：2014-04-30 14:00</p>
+                        <p class="cnt">地点：浙江大学（杭州市黄龙体育中心）</p>
+                        <p class="cnt cnt-src">
+                            来源：<a href="#">智联招聘</a>
+                        </p>
+                    </div>
+                    <a href="javascript:;" hidefocu="true" class="item-act">
+                        <span class="w-icon icon-unstar"></span>
+                        <span class="txt">收藏</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <span class="w-icon-normal icon-normal-recruit"></span>
+                    <div class="item-cnt">
+                        <h3 class="w-title">
+                            <a href="#">[招聘会] 网易公司春季校园招聘</a>
+                        </h3>
+                        <p class="cnt">时间：2014-04-30 14:00</p>
+                        <p class="cnt">地点：杭州市黄龙体育中心</p>
+                        <p class="cnt cnt-src">
+                            来源：<a href="#">智联招聘</a>
+                        </p>
+                    </div>
+                    <a href="javascript:;" hidefocu="true" class="item-act">
+                        <span class="w-icon icon-unstar"></span>
+                        <span class="txt">收藏</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <span class="w-icon-normal icon-normal-intern"></span>
+                    <div class="item-cnt">
+                        <h3 class="w-title">
+                            <a href="#">[实习兼职]网易招聘产品策划助理实习生</a>
+                        </h3>
+                        <p class="cnt">发布时间：2014-04-30 14:00</p>
+                        <p class="cnt">工作地点：杭州</p>
+                        <p class="cnt cnt-src">
+                            来源：<a href="#">智联招聘</a>
+                        </p>
+                    </div>
+                    <a href="javascript:;" hidefocu="true" class="item-act">
+                        <span class="w-icon icon-unstar"></span>
+                        <span class="txt">收藏</span>
+                    </a>
+                </div>
+                <div class="hint">建议您完善求职设置，我们会为您提供更多更精准的求职信息。<a href="javascript:void(0)">立即设置</a></div>
+                <div class="item">
+                    <span class="w-icon-normal icon-normal-postrcmd"></span>
+                    <div class="item-cnt">
+                        <h3 class="w-title">
+                            <a href="#">[职位推荐] 互联网产品经理</a>
+                        </h3>
+                        <p class="cnt">发布时间：2014-04-30 14:00</p>
+                        <p class="cnt">工作地点：杭州</p>
+                        <p class="cnt cnt-src">
+                            来源：<a href="#">智联招聘</a>
+                        </p>
+                    </div>
+                    <a href="javascript:;" hidefocu="true" class="item-act">
+                        <span class="w-icon icon-star"></span>
+                        <span class="txt">取消收藏</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 正在加载 20130831 Zlj -->
+            <div class="lst-foot">
+                <a hidefocus="true" href="javascript:;">点击加载更多&gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 侧栏 20130831 Zlj -->
+    <div class="g-sd">
+        <!-- 我的简历 20130831 Zlj -->
+        <div class="g-asbox">
+            <h2 class="w-title">我的简历</h2>
+            <div class="myresume f-cb">
+                <div class="w-icon-normal icon-normal-resumecmpl f-fl">
+                    <div class="percent">
+                        <span class="num">30</span>%
+                    </div>
+                    <div class="txt">
+                        简历完成度
+                    </div>
+                </div>
+                <div class="userinfo f-fl">
+                    <div class="name">司徒小君</div>
+                    <div class="gender">女性</div>
+                    <div class="age">25岁</div>
+                    <button class="w-blbtn">完善资料</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 收藏列表 20140428 Zlj -->
+        <div class="g-sdbox">
+            <div class="m-sdcnt m-sdcnt-collect">
+                <div class="cnt-hd">
+                    <h2 class="w-title">我的收藏</h2>
+                </div>
+                <div class="cnt-bd">
+                    <ul class="list">
+                        <li class="item"><a href="#">[面试技巧]你现在感兴趣的是什么东西啊啊啊啊</a></li>
+                        <li class="item"><a href="#">[行业资讯]南京新增</a></li>
+                        <li class="item"><a href="#">[招聘会]绍兴市两区春季大型招聘会即将在设呢什么什么</a></li>
+                        <li class="item"><a href="#">[宣讲会]网易公司将在什么学校举行什么宣讲会</a></li>
+                        <li class="item"><a href="#">[宣讲会]网易春季招聘宣讲</a></li>
+                    </ul>
+                    <div class="more">
+                        <a href="javascript:;">更多&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+        <script type="text/jqote2" id="js-tmp-timeline">
+    <div class="item" tid="<%=this.id%>" typeid = "<%=this.type%>">
+        <a class="w-icon-normal icon-normal-<%=this.iconType%>" href="<%=this.typeLink||""%>"></a>
+        <div class="item-cnt">
+            <h3 class="w-title">
+                <a href="<%=this.link%>" target="_blank">[<%=this.iconName%>]<%=this.subject%></a>
+            </h3>
+            <%=this.content%>
+            <p class="cnt cnt-src">
+                来源：<a href="<%=this.site%>"  target="_blank"><%=this.source%></a>
+            </p>
+        </div>
+        
+        <a class="item-act js-star open <%if(!this.favour){%>f-hide<%}%>" hidefocu="true" href="javascript:;">
+            <span class="w-icon icon-star"></span>
+            <span class="txt">取消收藏</span>
+        </a>
+        <a class="item-act js-star <%if(this.favour){%>f-hide<%}%>" hidefocu="true" href="javascript:;">
+            <span class="w-icon icon-unstar"></span>
+            <span class="txt">收藏</span>
+        </a>
+    </div>
+        </script>
+        <script type="text/javascript" >
+            var pFilters =  filter1,fitler2;
+            require(["app/welcome"],function(test){
+                test.init(pFilters,'广州');
+            });
+      </script>
+    <div class="g-ft">
+        <div class="m-footer">
+            <div class="intro">
+                <div class="logo"></div>
+                <div class="wrap">
+                    <div class="title">关于我们：</div>
+                    <div class="cnt">
+                        <p>网易云简历，一个面向大学生的专业求职网站。</p>
+                        <p>我们提供丰富的简历模板，并向您推荐靠谱的职位信息。</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="title">友情链接：</div>
+                    <div class="cnt">
+                        <ul class="links">
+                            <li>·<a target="_blank" href="http://www.51job.com/">前程无忧</a></li>
+                            <li>·<a target="_blank" href="http://www.chinahr.com/">中华英才网</a></li>
+                            <li>·<a target="_blank" href="https://cn.linkedin.com/">领英</a></li>
+                            <li>·<a target="_blank" href="http://www.yingjiesheng.com/">应届生求职网</a></li>
+                            <li>·<a target="_blank" href="http://www.zhaopin.com/">智联招聘</a></li>
+                            <li>·<a target="_blank" href="http://www.jjoobb.cn/">九博人才网</a></li>
+                            <li>·<a target="_blank" href="http://www.hiall.com.cn/">HiAll</a></li>
+                            <li>·<a target="_blank" href="http://www.dajie.com/">大街网</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cmpinfo">
+                <a target="_blank" href="http://corp.163.com/index_gb.html">关于网易</a>
+                <span class="sep">|</span>
+                <a target="_blank" href="http://help.163.com">客户服务</a>
+                <span class="sep">|</span>
+                <a target="_blank" href="http://corp.163.com/gb/legal/legal.html">隐私政策</a>
+                <span class="sep">|</span>
+                <span class="copyright">网易公司版权所有&copy;1997-<script src="http://mimg.127.net/copyright/year.js" type="text/javascript"></script></span>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+            <!-- 回到顶部 20130901 Zlj-->
+            <div class="w-sideact">
+                <a class="w-icon-normal icon-normal-gototop js-w-gototop" style="display:none;" hidefocus="true" href="javascript:;" title="返回顶部"></a>
+                <a class="w-icon-normal icon-normal-feedback js-add-feedback" hidefocus="true" href="javascript:;" title="反馈意见"></a>
+            </div>
+            <div class="w-ietip">
+                <span>为了更好的使用网易云简历，建议您升级浏览器版本或使用其它浏览器。</span>
+                <a target="_blank" href="https://www.google.com/intl/zh-CN/chrome/browser/">下载谷歌Chrome浏览器</a>
+            </div>
+            <script type="text/javascript">
+            $(document).delegate('.m-input','focus',function(){
+                $(this).addClass('m-input-focus');
+            }).delegate('.m-input','blur',function(){
+                $(this).removeClass('m-input-focus');    
+            });
+            //
+            </script>
+        </body>
+    </html>

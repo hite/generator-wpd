@@ -1,0 +1,45 @@
+﻿@import "mixin";
+
+/* 功能样式 */
+.f-cb:after{clear:both;content:".";display:block;height:0;visibility:hidden;overflow:hidden;}
+.f-cb{zoom:1;}
+.f-fl{float:left;display:inline;}
+.f-fr{float:right;display:inline;}
+.f-pr{position:relative;}
+.f-pab{position:absolute;}
+.f-ib{@include inline-block;}
+/* 去掉inline-block元素间空隙(父元素设置) */
+.f-ribs{font-size: 0;/* 所有浏览器 */*word-spacing: -1px;/* IE6、7 */}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.f-ribs{letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/}
+}
+.f-bk{display:block;}
+.f-bk{zoom:1;}
+.f-hide{display:none;}
+.f-nbd{border: none;}
+.f-nm{margin: 0;}
+.f-nml{margin-left:0}
+.f-nmr{margin-right:0}
+.f-ff{font-family:"Microsoft YaHei";}
+.f-ff0{font-family:arial;}
+.f-ff1{font-family:simsun,\5b8b\4f53;}
+.f-ff2{font-family:Constantia,Georgia;font-size:16px;}
+.f-ff3{font-family:Verdana;font-size:14px;}
+.f-mb{margin-bottom:13px;}
+.f-fs0{font-size:12px;}
+.f-fs1{font-size:14px;}
+.f-fs14{font-size:14px;}
+.f-fw0{font-weight:normal;}
+.f-fw-bold{font-weight:bold;}
+.f-txt-overflow{@include text-overflow;}
+.f-txt-impt,.f-txt-impt1,.f-txt-strong,.f-txt-kwd{font-weight: bolder;}
+.f-mark{color:#64a22d;}
+.f-emphasize{color: red;}
+.f-hide-file{position: absolute;left: 2px;top: 0px;width:64px;outline:none;cursor: pointer !important;cursor: hand;@include bgc-transparency(100);}
+.f-hide-sound{position:absolute;left:-9999px;top:-9999px;}
+.f-zindex{z-index:256;}
+.f-tlbr{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;}
+.f-transparent{@include bgc-transparency(100);}
+.ani-transparent{@include transition(opacity,.5s,0)}
+.ani-transitionY{@include transition(height,.4s,0);}
+.ani-transitionX{@include transition(width,.4s,0);}

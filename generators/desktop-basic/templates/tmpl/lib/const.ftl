@@ -1,5 +1,5 @@
 <#assign root = "" />
-<#assign contextPath = "" />
+<#assign contextPath = "/generator-wpd/generators/desktop-basic/templates" />
 <#assign mimgURLPrefix = "http://mimg.127.net" >
 <#if local?default(true)>
 	<#assign root = contextPath />

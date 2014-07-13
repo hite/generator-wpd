@@ -32,6 +32,24 @@ module.exports = function(grunt) {
     qunit: {
       files: ['test/**/*.html']
     },
+     freemarker: {
+         options:{
+             views:'tmpl',
+             out:'html'
+         },
+        src : 'mock/*.js'
+     },
+      sass: {
+          dist: {
+              files: [{
+                  expand: true,
+                  cwd: 'style/scss',
+                  src: ['*.scss'],
+                  dest: 'style/css',
+                  ext: '.css'
+              }]
+          }
+      },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -45,11 +63,10 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-qunit');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
+  grunt.loadNpmTasks('grunt-freemarker');
   // Default task.
   grunt.registerTask('default', ['jshint', 'qunit']);
+  grunt.registerTask('parseFtl', ['freemarker']);
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
 };

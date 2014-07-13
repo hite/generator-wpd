@@ -9,6 +9,8 @@
   "author": "",
   "license": "mit",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-freemarker": "^0.1.7",
+    "grunt-contrib-sass": "^0.7.3"
   }
 }

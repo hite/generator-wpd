@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>网易邮箱5.0 简约版Beta</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="Cache-Control" content="max-age=86400" />
+		<meta http-equiv="Content-Style-Type" content="text/css"/>
+		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+		<meta name="Author" content="netease"/>
+		<meta name="Version" content="1.0"/>
+		<!--compress_begin-->
+		<link type="text/css" href="/style/css/global.css" rel="stylesheet"/>
+		<!--compress_end-->
+		<!--compress_begin-->
+		<link type="text/css" href="/style/css/163new/163new.css" rel="stylesheet"/>
+		<!--compress_end-->
+		<style type="text/css">
+			html,body,.g-doc{overflow: auto;}
+			.g-bd,.g-ct{height: auto;}
+			.g-doc,.g-mn{background-color: #ffffff;}
+			.p-topbar-logo{background:none;}
+			.p-topbar-logo .logo{cursor: default;}
+		</style>
+	</head>
+	<body>
+		<div class="g-doc g-doc-static">
+			<!-- 顶栏 -->
+			<div class="g-hd f-cb" id="top">
+				<!-- 邮箱logo区域 -->
+				<div class="p-topbar-logo">
+					<div class="logo"></div>
+				</div>
+			</div>
+			<!-- 主内容区域 -->
+			<div class="g-bd f-cb">
+				<!-- 邮箱中心内容区域 -->
+				<div class="g-mn">
+					<div class="g-mnc">
+						<!-- 邮箱中心内容区域容器 -->
+						<div class="w-err w-err-404">
+							<div class="err-img"></div>
+							<div class="err-actions">
+								<a href="javascript:;" class="w-btn-submit" hidefocus="true" title="回到首页" id="gotologin" ><span class="value">回到首页</span></a>
+								<a href="javascript:;" class="w-btn-cancel"  hidefocus="true" title="反馈这个问题给工程师" id="gotoreport"><span class="value">反馈这个问题给工程师</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w-mask"></div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var fulldomail = location.host.split(".").slice(-3).join(".");
+			var loginurl = "http://"+fulldomail+"/";
+			var helpurl = "http://zhidao."+fulldomail+"/zhidao/newsugg.jsp#简约5.0版本";
+
+			var gotologin = document.getElementById("gotologin");
+			gotologin.onclick = function(event){
+				this.href = loginurl;
+				return true;
+			};
+			var gotoreport = document.getElementById("gotoreport");
+			gotoreport.onclick = function(event){
+				this.href = helpurl;
+				return true;
+			};
+			
+			var domain = location.host.split(".").slice(-2, -1).join(".");
+			document.body.className += " jy-" + domain;
+			
+			// 修改css
+			var links = document.getElementsByTagName('link');
+			if(links.length > 0) {
+				for(var i=0;i < links.length; i++) {
+					links[i].href = links[i].href.replace('http://mimg.127.net/', 'https://ssl.mail.126.com/mimg127/');
+				}
+			}
+			
+		};
+	</script>
+</html>

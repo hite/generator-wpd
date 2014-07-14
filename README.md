@@ -66,6 +66,18 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + Aim at flexiable configure project. use different tools chain in corroding to different bussiness system;
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
+## Changlog
+**Release log @2014-7-14 in version 0.1.0**
+
++ add desktop-basic generator
++ remove all questions in mobile-basic generator
++ add debugger scheme in mobile-basic generator
++ add demo\issues\bugs directory for later usage
++ add freemarker template file's parser in desktop-basic generator
++ add default favicon.ico in both generators
++ add sass grunt task in desktop-basic generator
++ add basic demo files in desktop-basic generator
+
 ## License
 
 MIT

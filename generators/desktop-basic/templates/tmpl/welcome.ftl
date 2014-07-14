@@ -69,7 +69,7 @@
                             来源：<a href="#">智联招聘</a>
                         </p>
                     </div>
-                    <a href="javascript:;" hidefocu="true" class="item-act">
+                    <a href="javascript:;" hidefocus="true" class="item-act">
                         <span class="w-icon icon-unstar"></span>
                         <span class="txt">收藏</span>
                     </a>
@@ -87,7 +87,7 @@
                             来源：<a href="#">智联招聘</a>
                         </p>
                     </div>
-                    <a href="javascript:;" hidefocu="true" class="item-act">
+                    <a href="javascript:;" hidefocus="true" class="item-act">
                         <span class="w-icon icon-unstar"></span>
                         <span class="txt">收藏</span>
                     </a>
@@ -104,7 +104,7 @@
                             来源：<a href="#">智联招聘</a>
                         </p>
                     </div>
-                    <a href="javascript:;" hidefocu="true" class="item-act">
+                    <a href="javascript:;" hidefocus="true" class="item-act">
                         <span class="w-icon icon-unstar"></span>
                         <span class="txt">收藏</span>
                     </a>
@@ -121,7 +121,7 @@
                             来源：<a href="#">智联招聘</a>
                         </p>
                     </div>
-                    <a href="javascript:;" hidefocu="true" class="item-act">
+                    <a href="javascript:;" hidefocus="true" class="item-act">
                         <span class="w-icon icon-unstar"></span>
                         <span class="txt">收藏</span>
                     </a>
@@ -139,7 +139,7 @@
                             来源：<a href="#">智联招聘</a>
                         </p>
                     </div>
-                    <a href="javascript:;" hidefocu="true" class="item-act">
+                    <a href="javascript:;" hidefocus="true" class="item-act">
                         <span class="w-icon icon-star"></span>
                         <span class="txt">取消收藏</span>
                     </a>

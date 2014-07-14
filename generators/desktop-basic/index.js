@@ -23,52 +23,44 @@ var WpdGenerator = yeoman.generators.Base.extend({
 
     projectfiles: function() {
         this.log('>> create project config.')
-        this.copy('editorconfig', '.editorconfig');
+//        this.copy('editorconfig', '.editorconfig');
         this.copy('jshintrc', '.jshintrc');
     },
 
-    // copy bone files directory
-    copyGMU: function() {
-        this.log('>> copy tmpl files.')
-        this.directory('tmpl/lib','WEB-INF/tmpl/lib/');
-        this.copy('tmpl/_main.ftl','WEB-INF/tmpl/main.ftl');
-        this.log("GMU/dist','js//GMU")
-        this.directory('GMU/dist/', 'js/GMU/');
-        this.log("mkdir('misc')")
-
-        this.mkdir('style');
+    // copy static files or demo files
+    copyHTML: function() {
+        this.log('>> copy static files.')
+        this.log('>> copy mock files.')
+        this.directory('mock/','mock/');
+        this.log('>> create demo files derived from ftl files.')
+        this.directory('html/','html/');
+    },
+    copyJS: function() {
+        this.directory('js/', 'js/');
     },
     copyMisc: function() {
-        this.mkdir('misc');
         this.directory('misc/', 'misc/');
     },
-    askCSSFrame: function() {
-        this._cssFrame = 'sass';
-    },
-
     copyStyle: function() {
-        var cssFrame = this._cssFrame.toLowerCase();
-        if (cssFrame == 'sass') {
-          this.directory('style/','style/')
-        };
+        this.directory('style/', 'style/');
     },
-    copyTest : function(){
+    _copyTest : function(){
       this.log('>> create test files.')
-      this.directory('test/','test/')
+      this.directory('test/','test/');
+    },
+    copyTmpl : function(){
+        this.log('>> create templates files.')
+        this.directory('tmpl/','WEB-INF/tmpl')
     },
     app: function() {
         this.log('>> create project meta files.')
 
         this.copy('bower.json', 'bower.json');
-        this.copy('package.json', 'package.json',{
-          cssFrame: this._cssFrame
-        });
-        this.copy('Gruntfile.js', 'Gruntfile.js',{
-          cssFrame: this._cssFrame
-        });
+        this.copy('package.json', 'package.json');
+        this.copy('Gruntfile.js', 'Gruntfile.js');
         //
-        this.directory('app/','app/')
-    },
+        this.copy('favicon.ico','favicon.ico');
+    }
 });
 
 module.exports = WpdGenerator;

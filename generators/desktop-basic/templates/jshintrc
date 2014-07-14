@@ -1,0 +1,28 @@
+{
+	"boss": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"expr": true,
+	"immed": true,
+	"noarg": true,
+	"onevar": false,
+	"quotmark": false,
+	"smarttabs": false,
+	"shadow": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true,
+	"plusplus": false,
+	"sub": true,
+	"passfail": false,
+	"-W099":true,
+
+	"browser": true,
+	"jquery": true,
+	"predef": [
+		"shark","alert"
+	],
+
+	"node": true
+}

@@ -29,7 +29,7 @@ Generator-wpd includes four sub modules by now.
 
 + mobile-basic
 + mobile <font color=green>(coming soon)</font>
-+ desktop-basic <font color=green>(coming soon)</font>
++ desktop-basic 
 + desktop <font color=green>(coming soon)</font>
 
 To install generator-wpd from npm, run:

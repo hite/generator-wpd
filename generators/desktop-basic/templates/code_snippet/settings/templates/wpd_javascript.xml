@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="wpd_html">
+  <template name="_csslink" value="&lt;link type=&quot;text/css&quot; href=&quot;$VAR0$&quot; rel=&quot;stylesheet&quot;&gt;&lt;/link&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_jslink" value="&lt;script type=&quot;text/javascript&quot; src=&quot;$VAR0$&quot;&gt;&lt;/script&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_jsembed" value="&lt;script type=&quot;text/javascript&quot;&gt;&#10;            (function() {}&#10;             $SELECTION$&#10;            )(window);&#10;&lt;/script&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+    <template name="_conl" value="console.log($VAR0$);" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JS" value="true" />
+            <option name="JAVASCRIPT" value="true" />
+        </context>
+    </template>
+</templateSet>
+

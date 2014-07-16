@@ -149,7 +149,7 @@
 /* 编辑简历区域头部 */
 .w-edithd{height: 34px;line-height: 34px;padding: 0 21px 0 18px;border-bottom: #d9d9d9;background: #e9eff7 url(../img/repeat-x.png) 0 -123px repeat-x;font-size: 14px;font-weight: bold;}
 /* loading */
-.w-loading{@extend %f-ib;width: 16px;height: 16px;background-image: inline-image("../img/base64/loading.gif");}
+.w-loading{@extend %f-ib;width: 16px;height: 16px;}
 /* 表单错误提示 */
 .w-error{display: none;position: absolute;left: 0;top: 100%;color: #f33;}
 /* 输入域 */

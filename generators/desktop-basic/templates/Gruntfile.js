@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     },
      freemarker: {
          options:{
-             views:'tmpl',
+             views:'WEB-INF/tmpl',
              out:'html'
          },
         src : 'mock/*.js'
@@ -61,8 +61,6 @@ module.exports = function(grunt) {
       }
     }
   });
-
-  // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-freemarker');
   // Default task.
   grunt.registerTask('default', ['jshint', 'qunit']);

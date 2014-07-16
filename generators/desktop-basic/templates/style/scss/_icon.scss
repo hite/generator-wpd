@@ -17,15 +17,11 @@ $icon-sprite : sprite-path($icon);
 .icon-arrow-down{cursor: pointer;}
 .icon-addmore{@include sprite-background-position($icon,"add_hover");}
 .icon-checkbox{margin-right: 3px;}
-.icon-checkbox-halfcheck{@include sprite-background-position($icon,"checkbox-halfcheck");}
-.icon-checkbox-checked{@include sprite-background-position($icon,"checkbox-checked");}
-.icon-checkbox-checked.icon-checkbox-disabled{@include sprite-background-position($icon,"checkbox-checked-disabled");}
 .icon-checkbox-disabled{cursor: default;}
 .icon-add{margin-top: 7px;}
 .icon-required{margin-top: 3px;}
 .icon-close{position: absolute;top: 6px;right: 8px;text-indent: -9999px;cursor: pointer;}
 .icon-search{position: absolute;top: 1px;right: 3px;cursor: pointer;}
-.m-select-disabled .icon-arrow-down{@include sprite-background-position($icon,"arrow-down-disabled");}
 
 /* 其他图标
 ------------------- */
@@ -34,30 +30,4 @@ $icon-normal-url : sprite-url($icon-normal);   // 这一句必须调用 否则�
 $icon-normal-sprite : sprite-path($icon-normal);
 .w-icon-normal{@include bg-img("../img/" + $icon-normal-sprite);}
 @include sprites($icon-normal,sprite-names($icon-normal),false,true);
-.icon-normal-stepfst.z-selected{@include sprite-background-position($icon-normal,"stepfst-selected");}
-.icon-normal-stepfst.z-finished{@include sprite-background-position($icon-normal,"stepfst-finished");}
-.icon-normal-step.z-selected{@include sprite-background-position($icon-normal,"step-selected");}
-.icon-normal-step.z-finished{@include sprite-background-position($icon-normal,"step-finished");}
-.icon-normal-steplst.z-selected{@include sprite-background-position($icon-normal,"steplst-selected");}
-.icon-normal-steplst.z-finished{@include sprite-background-position($icon-normal,"steplst-finished");}
-
-/* 创建简历步骤条图标
-------------------- */
-.icon-normal-stepfst,
-.icon-normal-step,
-.icon-normal-steplst{line-height: 38px;font-size: 14px;text-align: center;color: #262626;}
-.icon-normal-stepfst.z-selected,
-.icon-normal-step.z-selected,
-.icon-normal-steplst.z-selected{@include single-text-shadow(0, 1px, 1px, false, rgba(0, 0, 0, 0.77));color: #fff;}
-
-/* 跳过图标
-------------------- */
-.icon-normal-skip,
-.icon-normal-back{position: absolute;top: 0;line-height: 28px;}
-.icon-normal-skip{right: 0;text-align: center;}
-.icon-normal-back{width: 87px;padding-left: 8px;right: 240px;}
-.icon-normal-skip,
-.icon-normal-back{color: #333;}
-.icon-normal-skip:hover,
-.icon-normal-back:hover{color: #3a7ccc;}
 

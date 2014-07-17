@@ -1,63 +1,1012 @@
-/*
-Syntax error: Invalid CSS after "..."compass/css3";": expected selector or at-rule, was "%f-cb:after{cle..."
-        on line 3 of D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/_mixin.scss
-        from line 11 of D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/global.scss
+@charset "UTF-8";
+/************************************************************
+* Project:         网易云简历一期
+* Author:          Zlj
+* Date:            2013-08-26
+* Desc:
+* Copyright:       NetEase.com Inc. All rights reserved.
+************************************************************/
+@CHARSET "UTF-8";
+/* line 5, ../scss/_mixin.scss */
+.w-certitem { float: left; display: inline; }
 
-1: D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/global.scss
+/* line 7, ../scss/_mixin.scss */
+.w-chbox, .w-txticon { font-size: 0; /* 所有浏览器 */ *word-spacing: -1px; /* IE6、7 */ }
 
-Backtrace:
-D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/_mixin.scss:3
-D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/global.scss:11
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/scss/parser.rb:926:in `expected'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/scss/parser.rb:872:in `expected'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/scss/parser.rb:29:in `parse'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:327:in `_to_tree'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:258:in `block in to_tree'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/util.rb:297:in `silence_sass_warnings'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:258:in `to_tree'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:142:in `visit_import'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `map'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:7:in `visit'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/tree/root_node.rb:20:in `render'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:300:in `_render'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:248:in `block in render'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/util.rb:297:in `silence_sass_warnings'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/sass-3.1.11/lib/sass/engine.rb:248:in `render'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:136:in `block (2 levels) in compile'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:135:in `block in compile'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/logger.rb:45:in `red'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:134:in `compile'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:114:in `compile_if_required'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:99:in `block (2 levels) in run'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `each'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `block in run'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/compiler.rb:96:in `run'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:142:in `recompile'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:68:in `perform'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/commands/base.rb:18:in `execute'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/commands/project_base.rb:19:in `execute'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/bin/compass:25:in `block in <top (required)>'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/bin/compass:39:in `call'
-D:/Program Files/Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/bin/compass:39:in `<top (required)>'
-D:/Program Files/Ruby191/bin/compass:19:in `load'
-D:/Program Files/Ruby191/bin/compass:19:in `<main>'
+@media screen and (-webkit-min-device-pixel-ratio: 0) { /* line 9, ../scss/_mixin.scss */
+  .w-chbox, .w-txticon { letter-spacing: -5px; /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/ } }
+/* line 11, ../scss/_mixin.scss */
+.w-chbox .label-chbox, .w-txticon .txt, .w-loading { display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; overflow: hidden; letter-spacing: normal; word-spacing: normal; vertical-align: top; font-size: 12px; }
+
+/* 函数定义 */
+/* 小箭头 */
+/* 块阴影：
+1、对象选择器 {box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色, ...;}
+2、ie6-8不支持 
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...\"compass/css3\";\": expected selector or at-rule, was \"%f-cb:after{cle...\"\A         on line 3 of D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/_mixin.scss\A         from line 11 of D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/global.scss\A \A 1: D:/workspace/webapp_startup/generator-wpd/generators/desktop-basic/templates/style/scss/global.scss"; }
+/* IE6-8实现方式：
+1、对象选择器 {filter: progid:DXImageTransform.Microsoft.Shadow(Color=’颜色值’, Direction=阴影角度（数值）, Strength=阴影半径（数值）);} 
+*/
+/*
+CSS Reset
+参考kissy css reset和bootstrap css reset
+理念:1. reset的目的不仅是清除浏览器的默认样式，还需要进行重置，二者是紧密不可分的。 2. reset的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。 3. reset期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色:1. 按照html元素类别对代码进行了分组
+	 2. 只对存在浏览器差异的样式进行重置，不做多余的重置；
+	 3. 消除了部分因浏览器差异造成的bug
+	 4. 兼容IE6及以上主流浏览器；
+	 5. 重置打印样式。
+*/
+/* ------------------ 清除 ------------------- */
+/* 清除有差异的元素内外边距 */
+/* line 21, ../scss/_reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td figure { margin: 0; padding: 0; }
+
+/* 重置列表元素 */
+/* line 27, ../scss/_reset.scss */
+ul, ol { list-style: none outside none; }
+
+/* 经测试IE6/7中li标签list-style-position属性值为inside时，即使list-style-type为none，列表符仍然会占位，设为outside消除各浏览器中此差异 */
+/* 重置文本格式元素 */
+/* Firefox和Webkit默认样式q标签引用内容前后有引号*/
+/* line 32, ../scss/_reset.scss */
+q { quotes: none; }
+
+/* line 33, ../scss/_reset.scss */
+q:before, q:after { content: ""; /*  */ content: none; }
+
+/* 重置表单元素 */
+/* line 39, ../scss/_reset.scss */
+legend { color: #000; }
+
+/* for ie6 */
+/* line 40, ../scss/_reset.scss */
+fieldset { border: 0; }
+
+/* line 41, ../scss/_reset.scss */
+button, input, select, textarea { font-size: 100%; }
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* line 42, ../scss/_reset.scss */
+button, input { line-height: normal; /* 调整Firefox 4+浏览器下，客户端样式表中设置了“!important”的“line-height”属性的input表单 */ }
+
+/* 移除 Firefox 4+ 内部的内边距 */
+/* line 48, ../scss/_reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* line 52, ../scss/_reset.scss */
+textarea { overflow: auto; /* 清除IE中的垂直滚动条 */ }
+
+/* 重置多媒体元素 */
+/* line 57, ../scss/_reset.scss */
+img { border: 0; /* 去除链接里的img边框 */ vertical-align: top; /* 设置vertical-align 去掉a标签被撑高1px的问题 */ }
+
+/* 重置表格元素 */
+/* line 63, ../scss/_reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+/* line 64, ../scss/_reset.scss */
+th { text-align: inherit; }
+
+/* IE8 bug fixed: th 不继承 text-align*/
+/* 重置HTML5元素 */
+/* line 67, ../scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* 重置 */
+/* line 5, ../scss/_mixin.scss */
+.w-certitem { float: left; display: inline; }
+
+/* line 7, ../scss/_mixin.scss */
+.w-chbox, .w-txticon { font-size: 0; /* 所有浏览器 */ *word-spacing: -1px; /* IE6、7 */ }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { /* line 9, ../scss/_mixin.scss */
+  .w-chbox, .w-txticon { letter-spacing: -5px; /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/ } }
+/* line 11, ../scss/_mixin.scss */
+.w-chbox .label-chbox, .w-txticon .txt, .w-loading { display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; overflow: hidden; letter-spacing: normal; word-spacing: normal; vertical-align: top; font-size: 12px; }
+
+/* 函数定义 */
+/* 小箭头 */
+/* 块阴影：
+1、对象选择器 {box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色, ...;}
+2、ie6-8不支持 
+*/
+/* IE6-8实现方式：
+1、对象选择器 {filter: progid:DXImageTransform.Microsoft.Shadow(Color=’颜色值’, Direction=阴影角度（数值）, Strength=阴影半径（数值）);} 
+*/
+/* line 3, ../scss/_base.scss */
+* { /*scrollbar-face-color: #CDCDCD; 
+scrollbar-shadow-color: #CDCDCD; 
+scrollbar-highlight-color: #CDCDCD; 
+scrollbar-3dlight-color: #CDCDCD; 
+scrollbar-darkshadow-color: #CDCDCD; 
+scrollbar-track-color:#ECECEC; 
+scrollbar-arrow-color: #EBEBEB;*/ }
+/* line 62, ../scss/_mixin.scss */
+*::-webkit-scrollbar-track { background-color: #fff; }
+/* line 63, ../scss/_mixin.scss */
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+/* line 64, ../scss/_mixin.scss */
+*::-webkit-scrollbar-button { width: 0; height: 0; display: none; }
+/* line 65, ../scss/_mixin.scss */
+*::-webkit-scrollbar-corner { background-color: transparent; }
+/* line 66, ../scss/_mixin.scss */
+*::-webkit-scrollbar-thumb { border: solid #ddd; border-width: 1px 0 1px 1px; background: -moz-linear-gradient(left, #e6e6e6, #c9c9c9); background: -webkit-gradient(linear, left, from(#e6e6e6), to(#c9c9c9)); background: -webkit-linear-gradient(left, #e6e6e6, #c9c9c9); background: -o-linear-gradient(left, #e6e6e6, #c9c9c9); background: -ms-linear-gradient(left, #e6e6e6, #c9c9c9); background: linear-gradient(left, #e6e6e6, #c9c9c9); background-color: #d7d7d7\9; }
+/* line 70, ../scss/_mixin.scss */
+*::-webkit-scrollbar-thumb:hover { border: solid #ddd; border-width: 1px 0 1px 1px; background: -moz-linear-gradient(left, #e6e6e6, #c9c9c9); background: -webkit-gradient(linear, left, from(#e6e6e6), to(#c9c9c9)); background: -webkit-linear-gradient(left, #e6e6e6, #c9c9c9); background: -o-linear-gradient(left, #e6e6e6, #c9c9c9); background: -ms-linear-gradient(left, #e6e6e6, #c9c9c9); background: linear-gradient(left, #e6e6e6, #c9c9c9); background-color: #d7d7d7\9; }
+
+/* line 5, ../scss/_base.scss */
+html { *overflow: auto; /* 清除IE6-7中的默认垂直滚动条 */ -webkit-text-size-adjust: 100%; /* 在不禁止用户缩放的情况下避免iOS设备方向调整后自动校正字体大小 */ -ms-text-size-adjust: 100%; }
+
+/* 设置默认字体 */
+/* line 13, ../scss/_base.scss */
+body, button, input, select, textarea { outline: 0; font: 12px/1.5 "Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3", Microsoft Yahei, \5b8b\4f53, sans-serif; color: #333; }
+
+/* line 16, ../scss/_base.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+/* 设置文本格式元素 */
+/* line 19, ../scss/_base.scss */
+a, a:hover { text-decoration: none; }
+
+/* line 20, ../scss/_base.scss */
+a { color: #005bb7; }
+
+/* line 21, ../scss/_base.scss */
+a:hover { color: #3a7ccc; }
+
+/* 设置多媒体元素 */
+/* 响应式图片(保证图片大小自适应不超出父元素) ，IE6需要expression才能兼容，开销大，不做兼容处理*/
+/* line 25, ../scss/_base.scss */
+img { /*max-width: 100%;*/ width: auto\9; height: auto; /* 设置width和height auto以避免IE8中max-width导致高度无法自适应，见https://drupal.org/node/1782090 */ -ms-interpolation-mode: bicubic; /* 针对IE7，在图片放大的时候不会过度失真(测试为马赛克效果) http://www.aoao.org.cn/blog/2009/03/img-ms-interpolation-mode/*/ }
+
+/* 表单元素 */
+/* line 33, ../scss/_base.scss */
+textarea { resize: none; }
+
+/* 禁用文本输入域的大小调节 */
+/* line 36, ../scss/_base.scss */
+input[type="submit"], input[type="button"], button { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+/* line 37, ../scss/_base.scss */
+table { table-layout: fixed; }
+
+/* 默认 */
+/* line 4, ../scss/_icon.scss */
+.w-icon, .w-icon-normal { display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; overflow: hidden; letter-spacing: normal; word-spacing: normal; vertical-align: top; font-size: 12px; background-position: -9999px -9999px; }
+
+/* line 6, ../scss/_icon.scss */
+.w-icon { width: 20px; height: 20px; }
+
+/* 大小为20px的小图标
+------------------- */
+/* */
+/* line 13, ../scss/_icon.scss */
+.w-icon { background-image: url("../img/icon-s05112bbf7b.png"); background-repeat: no-repeat; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-add { background-position: 0 -740px; }
+/* line 43, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-add:hover, .icon-add.add_hover, .icon-add.add-hover { background-position: 0 -880px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-addcert { background-position: 0 -440px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-age { background-position: 0 -400px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-down-disabled { background-position: 0 -820px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-down { background-position: 0 -760px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-up { background-position: 0 -840px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-certificate { background-position: 0 -660px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-checkbox-checked-disabled { background-position: 0 -480px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-checkbox-checked { background-position: 0 -80px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-checkbox-halfcheck { background-position: 0 -300px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-checkbox { background-position: 0 -160px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-close { background-position: 0 -180px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-intern { background-position: 0 -860px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-preach { background-position: 0 -340px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-rec { background-position: 0 -720px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-recruit { background-position: 0 -60px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-sclrecruit { background-position: 0 -40px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-cls-star { background-position: 0 -560px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-delete { background-position: 0 -460px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-education { background-position: 0 -540px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-feedback { background-position: 0 -600px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-female { background-position: 0 -140px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-headset { background-position: 0 -620px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-internexp { background-position: 0 -240px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-lgarrow-down { background-position: 0 -780px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-location { background-position: 0 -320px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-logout { background-position: 0 -520px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-mail { background-position: 0 -360px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-male { background-position: 0 -120px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-other { background-position: 0 -800px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-person { background-position: 0 -420px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-phone { background-position: 0 -640px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ppnlclose { background-position: 0 -580px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-print { background-position: 0 0; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-projectexp { background-position: 0 -20px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-required { background-position: 0 -700px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search { background-position: 0 -680px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-setting { background-position: 0 -200px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-star { background-position: 0 -100px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-success { background-position: 0 -500px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-template { background-position: 0 -380px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-tip { background-position: 0 -260px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-unstar { background-position: 0 -220px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-uploadava { background-position: 0 -280px; }
+
+/* line 17, ../scss/_icon.scss */
+.icon-checkbox, .icon-add, .icon-arrow-down { cursor: pointer; }
+
+/* line 18, ../scss/_icon.scss */
+.icon-addmore { background-position: 0 -880px; }
+
+/* line 19, ../scss/_icon.scss */
+.icon-checkbox { margin-right: 3px; }
+
+/* line 20, ../scss/_icon.scss */
+.icon-checkbox-halfcheck { background-position: 0 -300px; }
+
+/* line 21, ../scss/_icon.scss */
+.icon-checkbox-checked { background-position: 0 -80px; }
+
+/* line 22, ../scss/_icon.scss */
+.icon-checkbox-checked.icon-checkbox-disabled { background-position: 0 -480px; }
+
+/* line 23, ../scss/_icon.scss */
+.icon-checkbox-disabled { cursor: default; }
+
+/* line 24, ../scss/_icon.scss */
+.icon-add { margin-top: 7px; }
+
+/* line 25, ../scss/_icon.scss */
+.icon-required { margin-top: 3px; }
+
+/* line 26, ../scss/_icon.scss */
+.icon-close { position: absolute; top: 6px; right: 8px; text-indent: -9999px; cursor: pointer; }
+
+/* line 27, ../scss/_icon.scss */
+.icon-search { position: absolute; top: 1px; right: 3px; cursor: pointer; }
+
+/* line 28, ../scss/_icon.scss */
+.m-select-disabled .icon-arrow-down { background-position: 0 -820px; }
+
+/* 其他图标
+------------------- */
+/* */
+/* line 35, ../scss/_icon.scss */
+.w-icon-normal { background-image: url("../img/icon-normal-s9619d995b2.png"); background-repeat: no-repeat; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-alert { background-position: 0 -1244px; height: 27px; width: 27px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-back { background-position: 0 -1355px; height: 28px; width: 95px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-crttip { background-position: 0 -1271px; height: 84px; width: 66px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-deltip { background-position: 0 -1160px; height: 84px; width: 66px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-export { background-position: 0 -228px; height: 55px; width: 55px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-feedback { background-position: 0 -828px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-finishtip { background-position: 0 0; height: 114px; width: 89px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-gototop { background-position: 0 -562px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-intern { background-position: 0 -866px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-news { background-position: 0 -524px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-ok { background-position: 0 -1383px; height: 26px; width: 26px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-postrcmd { background-position: 0 -752px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-process { background-position: 0 -431px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-rcmd { background-position: 0 -283px; height: 55px; width: 55px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-recruit { background-position: 0 -393px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-resumecmpl { background-position: 0 -114px; height: 114px; width: 89px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-security { background-position: 0 -338px; height: 55px; width: 55px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-skill { background-position: 0 -676px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-skip { background-position: 0 -1018px; height: 28px; width: 65px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-step-finished { background-position: 0 -714px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-step-selected { background-position: 0 -600px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-step { background-position: 0 -790px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-stepfst-finished { background-position: 0 -980px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-stepfst-selected { background-position: 0 -904px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-stepfst { background-position: 0 -1046px; height: 38px; width: 193px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-steplst-finished { background-position: 0 -1084px; height: 38px; width: 177px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-steplst-selected { background-position: 0 -942px; height: 38px; width: 177px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-steplst { background-position: 0 -1122px; height: 38px; width: 177px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-teachin { background-position: 0 -638px; height: 38px; width: 38px; }
+
+/* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-normal-tmpl { background-position: 0 -469px; height: 55px; width: 55px; }
+
+/* line 37, ../scss/_icon.scss */
+.icon-normal-stepfst.z-selected { background-position: 0 -904px; }
+
+/* line 38, ../scss/_icon.scss */
+.icon-normal-stepfst.z-finished { background-position: 0 -980px; }
+
+/* line 39, ../scss/_icon.scss */
+.icon-normal-step.z-selected { background-position: 0 -600px; }
+
+/* line 40, ../scss/_icon.scss */
+.icon-normal-step.z-finished { background-position: 0 -714px; }
+
+/* line 41, ../scss/_icon.scss */
+.icon-normal-steplst.z-selected { background-position: 0 -942px; }
+
+/* line 42, ../scss/_icon.scss */
+.icon-normal-steplst.z-finished { background-position: 0 -1084px; }
+
+/* 创建简历步骤条图标
+------------------- */
+/* line 48, ../scss/_icon.scss */
+.icon-normal-stepfst, .icon-normal-step, .icon-normal-steplst { line-height: 38px; font-size: 14px; text-align: center; color: #262626; }
+
+/* line 51, ../scss/_icon.scss */
+.icon-normal-stepfst.z-selected, .icon-normal-step.z-selected, .icon-normal-steplst.z-selected { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.77); color: #fff; }
+
+/* 跳过图标
+------------------- */
+/* line 56, ../scss/_icon.scss */
+.icon-normal-skip, .icon-normal-back { position: absolute; top: 0; line-height: 28px; }
+
+/* line 57, ../scss/_icon.scss */
+.icon-normal-skip { right: 0; text-align: center; }
+
+/* line 58, ../scss/_icon.scss */
+.icon-normal-back { width: 87px; padding-left: 8px; right: 240px; }
+
+/* line 60, ../scss/_icon.scss */
+.icon-normal-skip, .icon-normal-back { color: #333; }
+
+/* line 62, ../scss/_icon.scss */
+.icon-normal-skip:hover, .icon-normal-back:hover { color: #3a7ccc; }
+
+/* button
+------------------- */
+/* line 6, ../scss/_widget.scss */
+.w-blbtn, .w-grbtn { display: inline-block; height: 26px; line-height: 26px; padding: 0 23px; border: 1px solid; -webkit-border-radius: 2px 2px; -moz-border-radius: 2px / 2px; border-radius: 2px / 2px; -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); background: url("../img/repeat-x.png") repeat-x; cursor: pointer; }
+
+/* 蓝色按钮 */
+/* line 8, ../scss/_widget.scss */
+.w-blbtn { margin-right: 4px; border-color: #316bb4; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); background-position: 0 -203px; }
+
+/* line 10, ../scss/_widget.scss */
+.w-blbtn, .w-blbtn:hover { color: white !important; }
+
+/* line 11, ../scss/_widget.scss */
+.w-blbtn:hover { background-position: 0 -411px; }
+
+/* 灰色按钮 */
+/* line 13, ../scss/_widget.scss */
+.w-grbtn { border-color: #d2d2d2; background-position: 0 -167px; }
+
+/* line 14, ../scss/_widget.scss */
+.w-grbtn { color: #333333 !important; }
+
+/* line 15, ../scss/_widget.scss */
+.w-grbtn:hover { color: #015ab4 !important; }
+
+/* button扩展
+------------------- */
+/* line 19, ../scss/_widget.scss */
+.w-blbtn-disabled { border-color: #acacac; text-shadow: none; cursor: default; }
+
+/* line 21, ../scss/_widget.scss */
+.w-blbtn-disabled, .w-blbtn-disabled:hover { color: #666; background-position: 0 -375px; }
+
+/* line 22, ../scss/_widget.scss */
+.w-grbtn-select { padding-right: 0; }
+
+/* line 23, ../scss/_widget.scss */
+.w-grbtn-select .icon-arrow-down { margin-top: 4px; }
+
+/* 登录按钮 */
+/* line 27, ../scss/_widget.scss */
+.w-blbtn-login, .w-grbtn-register { height: 32px; line-height: 32px; padding: 0 28px; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px / 4px; border-radius: 4px / 4px; font-size: 14px; }
+
+/* 注册按钮 */
+/* line 29, ../scss/_widget.scss */
+.w-grbtn-register { border-color: #acacac; background-position: 0 -245px; }
+
+/* 各种框的长度
+------------------- */
+/* line 33, ../scss/_widget.scss */
+.w-width75 { width: 75px; }
+
+/* line 34, ../scss/_widget.scss */
+.w-width76 { width: 76px; }
+
+/* line 35, ../scss/_widget.scss */
+.w-width84 { width: 84px; }
+
+/* line 36, ../scss/_widget.scss */
+.w-width90 { width: 90px; }
+
+/* line 37, ../scss/_widget.scss */
+.w-width97 { width: 97px; }
+
+/* line 38, ../scss/_widget.scss */
+.w-width105 { width: 105px; }
+
+/* line 39, ../scss/_widget.scss */
+.w-width120 { width: 120px; }
+
+/* line 40, ../scss/_widget.scss */
+.w-width147 { width: 147px; }
+
+/* line 41, ../scss/_widget.scss */
+.w-width175 { width: 175px; }
+
+/* line 42, ../scss/_widget.scss */
+.w-width200 { width: 200px; }
+
+/* line 43, ../scss/_widget.scss */
+.w-width480 { width: 480px; }
+
+/* line 44, ../scss/_widget.scss */
+.w-width530 { width: 530px; }
+
+/* 模板缩略图
+------------------- */
+/* line 48, ../scss/_widget.scss */
+.w-template { display: block; width: 228px; height: 322px; margin: 0 auto; border: 1px solid #d3d3d3; cursor: pointer; }
+
+/* line 50, ../scss/_widget.scss */
+.w-template:hover, .w-template-selected { border-color: #3d79cc; }
+
+/* line 51, ../scss/_widget.scss */
+.w-template-simple1 { background: url("../img/template/small/simple1_1.jpg"); }
+
+/* line 52, ../scss/_widget.scss */
+.w-template-simple2 { background: url("../img/template/small/simple2_1.jpg"); }
+
+/* line 53, ../scss/_widget.scss */
+.w-template-position1 { background: url("../img/template/small/position1_1.jpg"); }
+
+/* line 54, ../scss/_widget.scss */
+.w-template-creative1 { background: url("../img/template/small/creative1_1.jpg"); }
+
+/* line 55, ../scss/_widget.scss */
+.w-template-comingsoon { background: url("../img/template/small/comingsoon.jpg"); cursor: default; }
+
+/* line 56, ../scss/_widget.scss */
+.w-template-comingsoon:hover { border-color: #d3d3d3; }
+
+/* 模板预览大图
+------------------- */
+/* line 60, ../scss/_widget.scss */
+.w-templatel { display: block; width: 715px; height: 1012px; margin: 0 auto; }
+
+/* line 61, ../scss/_widget.scss */
+.w-templatel-simple1 { background: url("../img/template/large/simple1_1.jpg"); }
+
+/* line 62, ../scss/_widget.scss */
+.w-templatel-simple2 { background: url("../img/template/large/simple2_1.jpg"); }
+
+/* line 63, ../scss/_widget.scss */
+.w-templatel-position1 { background: url("../img/template/large/position1_1.jpg"); }
+
+/* line 64, ../scss/_widget.scss */
+.w-templatel-creative1 { background: url("../img/template/large/creative1_1.jpg"); }
+
+/* 选择模板预览图
+------------------- */
+/* line 68, ../scss/_widget.scss */
+.w-templatem { display: block; width: 660px; height: 934px; margin: 0 auto; }
+
+/* line 69, ../scss/_widget.scss */
+.w-templatem-simple1 { background: url("../img/template/medium/simple1_1.jpg"); }
+
+/* line 70, ../scss/_widget.scss */
+.w-templatem-simple2 { background: url("../img/template/medium/simple2_1.jpg"); }
+
+/* line 71, ../scss/_widget.scss */
+.w-templatem-position1 { background: url("../img/template/medium/position1_1.jpg"); }
+
+/* line 72, ../scss/_widget.scss */
+.w-templatem-creative1 { background: url("../img/template/medium/creative1_1.jpg"); }
+
+/* 复选框
+------------------- */
+/* line 76, ../scss/_widget.scss */
+.w-chbox { height: 26px; line-height: 26px; }
+
+/* line 77, ../scss/_widget.scss */
+.w-chbox .icon-checkbox { margin-top: 3px; }
+
+/* line 78, ../scss/_widget.scss */
+.w-chbox .icon-checkbox input { display: none; }
+
+/* line 79, ../scss/_widget.scss */
+.w-chbox .label-chbox { cursor: pointer; }
+
+/* 文字和按钮组合
+------------------- */
+/* line 83, ../scss/_widget.scss */
+.w-txticon { height: 28px; line-height: 28px; }
+
+/* line 84, ../scss/_widget.scss */
+.w-txticon .w-icon { margin-top: 4px; }
+
+/* 遮罩弹框
+------------------- */
+/* line 91, ../scss/_widget.scss */
+.w-maskdialog, .w-mask, .w-dialog { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
+
+/* line 92, ../scss/_widget.scss */
+.w-maskdialog { z-index: 10; }
+
+/* line 93, ../scss/_widget.scss */
+.w-dialog { overflow-x: hidden; overflow-y: auto; }
+
+/* line 94, ../scss/_widget.scss */
+.w-mask { position: fixed; background-color: #000; opacity: 0.7; -moz-opacity: 0.7; filter: Alpha(Opacity=70); -ms-filter: alpha(opacity=70); }
+
+/* 小三角
+------------------- */
+/* line 98, ../scss/_widget.scss */
+.w-arrow { position: absolute; display: block; content: " "; width: 0; height: 0; line-height: 0; font-size: 0; width: 16px; height: 8px; }
+
+/* line 100, ../scss/_widget.scss */
+.w-arrow .arrow-bdc, .w-arrow .arrow-bgc { position: absolute; }
+
+/* line 101, ../scss/_widget.scss */
+.w-arrow-left .arrow-bdc { top: 1px; border: 7px solid transparent; /* 向上小三角 */ border-left: 0; border-right-color: #fff9cc; _border-style: dashed solid dashed dashed; }
+
+/* line 102, ../scss/_widget.scss */
+.w-arrow-left .arrow-bgc { top: 0; border: 8px solid transparent; /* 向上小三角 */ border-left: 0; border-right-color: #fdec7b; _border-style: dashed solid dashed dashed; }
+
+/* line 103, ../scss/_widget.scss */
+.w-arrow-right .arrow-bdc { top: 1px; border: 7px solid transparent; /* 向上小三角 */ border-right: 0; border-left-color: #fff9cc; _border-style: solid dashed dashed dashed; }
+
+/* line 104, ../scss/_widget.scss */
+.w-arrow-right .arrow-bgc { top: 0; border: 8px solid transparent; /* 向上小三角 */ border-right: 0; border-left-color: #fdec7b; _border-style: solid dashed dashed dashed; }
+
+/* line 105, ../scss/_widget.scss */
+.w-arrow-top .arrow-bdc { left: 1px; bottom: 0; border: 7px solid transparent; /* 向上小三角 */ border-top: 0; border-bottom-color: #fff9cc; _border-style: dashed dashed solid dashed; }
+
+/* line 106, ../scss/_widget.scss */
+.w-arrow-top .arrow-bgc { left: 0; bottom: 0; border: 8px solid transparent; /* 向上小三角 */ border-top: 0; border-bottom-color: #fdec7b; _border-style: dashed dashed solid dashed; }
+
+/* line 107, ../scss/_widget.scss */
+.w-arrow-down .arrow-bdc { left: 1px; border: 7px solid transparent; /* 向上小三角 */ }
+
+/* line 108, ../scss/_widget.scss */
+.w-arrow-down .arrow-bgc { left: 0; border: 8px solid transparent; /* 向上小三角 */ }
+
+/* 默认头像
+------------------- */
+/* 头像 */
+/* line 114, ../scss/_widget.scss */
+.w-ava { width: 75px; height: 95px; }
+
+/* IE6 7访问提示
+------------------- */
+/* line 118, ../scss/_widget.scss */
+.w-ietip { display: none; *display: block; position: absolute; top: 0; left: 0; right: 0; z-index: 1000; width: 100%; height: 29px; line-height: 29px; border-bottom: 1px solid #cfac2f; text-align: center; color: #333; background-color: #faf6b5; }
+
+/* line 120, ../scss/_widget.scss */
+.w-ietip a, .w-ietip a:hover { text-decoration: underline; }
+
+/* 右侧回到顶部&反馈
+------------------- */
+/* line 124, ../scss/_widget.scss */
+.w-sideact { position: fixed; right: 55px; bottom: 155px; }
+
+/* line 125, ../scss/_widget.scss */
+.w-sideact .w-icon-normal { display: block; cursor: pointer; }
+
+/* 证书输入框项
+------------------- */
+/* line 129, ../scss/_widget.scss */
+.w-certitem { position: relative; height: 18px; line-height: 18px; overflow: hidden; margin: 3px 5px; padding-right: 18px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #e2e2e2; }
+
+/* line 130, ../scss/_widget.scss */
+.w-certitem .title { padding: 0 10px; color: #999; background-color: #eaeaea; }
+
+/* line 131, ../scss/_widget.scss */
+.w-certitem .icon-ppnlclose { position: absolute; right: -1px; top: -1px; }
+
+/* line 132, ../scss/_widget.scss */
+.w-certitem-tip { padding-right: 0; color: #999; background: transparent; }
+
+/* line 133, ../scss/_widget.scss */
+.w-certitem-edit { width: 130px; margin-right: 0; margin-left: 0; padding: 0; }
+
+/* line 135, ../scss/_widget.scss */
+.w-certitem-edit, .w-certitem-edit input { background-color: transparent; }
+
+/* line 136, ../scss/_widget.scss */
+.w-certitem-edit input { height: 18px; line-height: 18px; width: 100%; border: none; }
+
+/* line 137, ../scss/_widget.scss */
+.w-certitem-edit span { position: absolute; top: 0; left: 0; height: 1px; overflow: hidden; visibility: hidden; }
+
+/* 其他
+------------------- */
+/* 名企标签 */
+/* line 143, ../scss/_widget.scss */
+.w-famousent { display: inline-block; height: 16px; line-height: 16px; padding: 0 10px; border: 1px solid #a8bfcf; font-size: 12px; font-weight: normal; background-color: #f4fbff; }
+
+/* 各区域标题 */
+/* line 145, ../scss/_widget.scss */
+.w-title { font-size: 14px; font-weight: bold; }
+
+/* line 146, ../scss/_widget.scss */
+.w-mtitle { font-size: 18px; font-weight: bold; color: #0d0d0d; }
+
+/* 面包屑 */
+/* line 148, ../scss/_widget.scss */
+.w-crumb { margin-bottom: 10px; }
+
+/* 编辑简历区域头部 */
+/* line 150, ../scss/_widget.scss */
+.w-edithd { height: 34px; line-height: 34px; padding: 0 21px 0 18px; border-bottom: #d9d9d9; background: #e9eff7 url(../img/repeat-x.png) 0 -123px repeat-x; font-size: 14px; font-weight: bold; }
+
+/* loading */
+/* line 152, ../scss/_widget.scss */
+.w-loading { width: 16px; height: 16px; background-image: url('data:image/gif;base64,R0lGODlhEAAQAKIHADZmvyRl1FZ5upOjxHWOv7G5yb2/w////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFAAAHACwAAAAAEAAQAAADQ3i6B8CQORdXCG0eIeC92cZ11seMZBlxjGFUC0EcrgvLcv1W+GzDB1lrxxgMILqi8bhIFgqHJbP5ej6j04gVClxcIwkAIfkEBQAABwAsAAAAABAAEAAAAz94uifCkDkXFwBtHkLgvdnGddbHjGQZcUwQVMswHK4Ly3L9VvhswwcZcFEoDIlFI8xgOCSVESbTCY1Kj4ppJAEAIfkEBQAABwAsAAAAABAADgAAAzt4ukfEkDkXlxBtnjHgvdnGddbHjGQZcQwAVEtRHK4Ly3L9VvhswwcZIxCIGAwQIpFxPA6VzGayCHEqEgAh+QQFAAAHACwAAAAAEAAQAAADPni6N8OQORcXIW2eUuC92cZ11seMZBlxjCBUi2EcrgvLcv1W+GzDBxkDAAAOiUXjAVkMBIzEg9OplE6r1koCACH5BAUAAAcALAAAAAAOABAAAAM8eLpXxVA5F88YbR5j1r3ZxnXWx4xkGXEKQVSM68KtTNc3IwhRECy7HcPnUwR5AMCB+DMik8piBKq8JSEJACH5BAUAAAcALAAAAAAQABAAAAM+eLpnxpA5F1cpbdZzb95cBzLeeAzDGAQnmlbr6r5RzKIquxBEBAAQHo/x+zGEPYHgUAQek8qlcRNdmg7KSgIAIfkEBQAABwAsAAACABAADgAAAz54aqZ+IbzD2Ivx1eaw1Nz1KUUxTQBwlOWppClrurDauq/qDMMpCBMe7/H7PYQ9AuFQBB6TyqURF13iHkpXAgAh+QQFAAAHACwAAAAAEAAQAAADPni6F8GQORfjfADURXPejKeBy7cYBikIB4pu6+qmVcy+4MoURUQQEB6P8fvthIfB4FAEHpPKpXETXZIUykoCADs='); }
+
+/* 表单错误提示 */
+/* line 154, ../scss/_widget.scss */
+.w-error { display: none; position: absolute; left: 0; top: 100%; color: #f33; }
+
+/* 输入域 */
+/* line 156, ../scss/_widget.scss */
+.w-textarea { padding: 5px; line-height: 14px; border: 1px solid #e2e2e2; background-color: #fff; overflow-y: auto; }
+
+/* 输入框提示语 */
+/* line 158, ../scss/_widget.scss */
+.w-placeholder { position: absolute; left: 5px; height: 24px; line-height: 24px; top: 0; color: #999; }
+
+/* 帮助提示语 */
+/* line 160, ../scss/_widget.scss */
+.w-assist { font-size: 12px; color: #999; }
+
+/* 内容为空提示 */
+/* line 162, ../scss/_widget.scss */
+.w-emptip { line-height: 140px; text-align: center; font-size: 16px; color: #666; }
+
+/* line 5, ../scss/_mixin.scss */
+.w-certitem { float: left; display: inline; }
+
+/* line 7, ../scss/_mixin.scss */
+.w-chbox, .w-txticon { font-size: 0; /* 所有浏览器 */ *word-spacing: -1px; /* IE6、7 */ }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { /* line 9, ../scss/_mixin.scss */
+  .w-chbox, .w-txticon { letter-spacing: -5px; /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/ } }
+/* line 11, ../scss/_mixin.scss */
+.w-chbox .label-chbox, .w-txticon .txt, .w-loading { display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; overflow: hidden; letter-spacing: normal; word-spacing: normal; vertical-align: top; font-size: 12px; }
+
+/* 函数定义 */
+/* 小箭头 */
+/* 块阴影：
+1、对象选择器 {box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色, ...;}
+2、ie6-8不支持 
+*/
+/* IE6-8实现方式：
+1、对象选择器 {filter: progid:DXImageTransform.Microsoft.Shadow(Color=’颜色值’, Direction=阴影角度（数值）, Strength=阴影半径（数值）);} 
+*/
+/* 功能样式 */
+/* line 4, ../scss/_function.scss */
+.f-cb:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; overflow: hidden; }
+
+/* line 5, ../scss/_function.scss */
+.f-cb { zoom: 1; }
+
+/* line 6, ../scss/_function.scss */
+.f-fl { float: left; display: inline; }
+
+/* line 7, ../scss/_function.scss */
+.f-fr { float: right; display: inline; }
+
+/* line 8, ../scss/_function.scss */
+.f-pr { position: relative; }
+
+/* line 9, ../scss/_function.scss */
+.f-pab { position: absolute; }
+
+/* line 10, ../scss/_function.scss */
+.f-ib { display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; overflow: hidden; letter-spacing: normal; word-spacing: normal; vertical-align: top; font-size: 12px; }
+
+/* 去掉inline-block元素间空隙(父元素设置) */
+/* line 12, ../scss/_function.scss */
+.f-ribs { font-size: 0; /* 所有浏览器 */ *word-spacing: -1px; /* IE6、7 */ }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { /* line 14, ../scss/_function.scss */
+  .f-ribs { letter-spacing: -5px; /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/ } }
+/* line 16, ../scss/_function.scss */
+.f-bk { display: block; }
+
+/* line 17, ../scss/_function.scss */
+.f-bk { zoom: 1; }
+
+/* line 18, ../scss/_function.scss */
+.f-hide { display: none; }
+
+/* line 19, ../scss/_function.scss */
+.f-nbd { border: none; }
+
+/* line 20, ../scss/_function.scss */
+.f-nm { margin: 0; }
+
+/* line 21, ../scss/_function.scss */
+.f-nml { margin-left: 0; }
+
+/* line 22, ../scss/_function.scss */
+.f-nmr { margin-right: 0; }
+
+/* line 23, ../scss/_function.scss */
+.f-ff { font-family: "Microsoft YaHei"; }
+
+/* line 24, ../scss/_function.scss */
+.f-ff0 { font-family: arial; }
+
+/* line 25, ../scss/_function.scss */
+.f-ff1 { font-family: simsun,\5b8b\4f53; }
+
+/* line 26, ../scss/_function.scss */
+.f-ff2 { font-family: Constantia,Georgia; font-size: 16px; }
+
+/* line 27, ../scss/_function.scss */
+.f-ff3 { font-family: Verdana; font-size: 14px; }
+
+/* line 28, ../scss/_function.scss */
+.f-mb { margin-bottom: 13px; }
+
+/* line 29, ../scss/_function.scss */
+.f-fs0 { font-size: 12px; }
+
+/* line 30, ../scss/_function.scss */
+.f-fs1 { font-size: 14px; }
+
+/* line 31, ../scss/_function.scss */
+.f-fs14 { font-size: 14px; }
+
+/* line 32, ../scss/_function.scss */
+.f-fw0 { font-weight: normal; }
+
+/* line 33, ../scss/_function.scss */
+.f-fw-bold { font-weight: bold; }
+
+/* line 34, ../scss/_function.scss */
+.f-txt-overflow { overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
+
+/* line 35, ../scss/_function.scss */
+.f-txt-impt, .f-txt-impt1, .f-txt-strong, .f-txt-kwd { font-weight: bolder; }
+
+/* line 36, ../scss/_function.scss */
+.f-mark { color: #64a22d; }
+
+/* line 37, ../scss/_function.scss */
+.f-emphasize { color: red; }
+
+/* line 38, ../scss/_function.scss */
+.f-hide-file { position: absolute; left: 2px; top: 0px; width: 64px; outline: none; cursor: pointer !important; cursor: hand; opacity: 0; -moz-opacity: 0; filter: Alpha(Opacity=0); -ms-filter: alpha(opacity=0); }
+
+/* line 39, ../scss/_function.scss */
+.f-hide-sound { position: absolute; left: -9999px; top: -9999px; }
+
+/* line 40, ../scss/_function.scss */
+.f-zindex { z-index: 256; }
+
+/* line 41, ../scss/_function.scss */
+.f-tlbr { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; overflow-y: auto; overflow-x: hidden; }
+
+/* line 42, ../scss/_function.scss */
+.f-transparent { opacity: 0; -moz-opacity: 0; filter: Alpha(Opacity=0); -ms-filter: alpha(opacity=0); }
+
+/* line 43, ../scss/_function.scss */
+.ani-transparent { -webkit-transition: opacity, 0.5s, 0; -moz-transition: opacity, 0.5s, 0; -o-transition: opacity, 0.5s, 0; transition: opacity, 0.5s, 0; }
+
+/* line 44, ../scss/_function.scss */
+.ani-transitionY { -webkit-transition: height, 0.4s, 0; -moz-transition: height, 0.4s, 0; -o-transition: height, 0.4s, 0; transition: height, 0.4s, 0; }
+
+/* line 45, ../scss/_function.scss */
+.ani-transitionX { -webkit-transition: width, 0.4s, 0; -moz-transition: width, 0.4s, 0; -o-transition: width, 0.4s, 0; transition: width, 0.4s, 0; }
+
+/* 整体框架结构(主内容区高度自适应)
+------------------- */
+/* line 22, ../scss/global.scss */
+html, body { height: 100%; text-align: center; overflow: hidden; }
+
+/* line 23, ../scss/global.scss */
+.g-doc { position: relative; min-width: 960px; width: auto; height: 100%; overflow-y: auto; }
+
+/* 保证页面高度自适应关键属性 */
+/* line 24, ../scss/global.scss */
+.g-wrap { width: 960px; height: 100%; margin: 0 auto; text-align: left; }
+
+/*.g-hd{position: relative;z-index: 1;height: 65px;margin-bottom: -66px;border-bottom: 1px solid #1867b6;background-color: #3a7ccc;}
+.g-bd{position: relative;width: 100%;min-height: 100%;height: auto !important;_height: 100%;}
+.g-bdc{padding: 66px 0 70px;}
+.g-bdct .g-wrap{padding: 16px 0 25px;}
+.g-bd,
+.g-bdct .g-wrap{background: #f7f7f7 url("../img/main-bg.png") repeat;}
+.g-ft{position: relative;height: 69px;line-height: 69px;margin-top: -70px;border-top: 1px solid #c8c8c8;background-color: #f7f7f7;color: #848585;}
+*/
+/* line 33, ../scss/global.scss */
+.g-hd { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 4; height: 65px; border-bottom: 1px solid #1867b6; background-color: #3a7ccc; }
+
+/* line 34, ../scss/global.scss */
+.g-bd { position: absolute; left: 0; right: 0; top: 66px; bottom: 0; width: 100%; overflow-y: auto; overflow-x: hidden; }
+
+/* line 35, ../scss/global.scss */
+.g-bdc { min-height: 100%; }
+
+/* line 36, ../scss/global.scss */
+.g-bdct .g-wrap { padding: 16px 0 25px; }
+
+/* line 38, ../scss/global.scss */
+.g-bd, .g-bdct .g-wrap { background: #f7f7f7 url("../img/mainbg.png") repeat; }
+
+/* line 39, ../scss/global.scss */
+.g-bdct { padding-bottom: 115px; }
+
+/* line 40, ../scss/global.scss */
+.g-ft { position: relative; height: 114px; margin-top: -115px; border-top: 1px solid #c8c8c8; background-color: #f7f7f7; color: #8f9090; }
+
+/* line 41, ../scss/global.scss */
+.g-mn { float: left; width: 720px; margin-right: 10px; }
+
+/* line 42, ../scss/global.scss */
+.g-sd { float: left; width: 230px; }
+
+/* line 43, ../scss/global.scss */
+.g-sd-fixed { position: fixed; top: 66px; margin-left: 730px; z-index: 2; }
+
+/* 带边框内容区块 */
+/* line 48, ../scss/global.scss */
+.g-box, .g-asbox, .g-sdbox { padding: 12px 11px; border: 1px solid; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15); }
+
+/* 主内容区块 */
+/* line 51, ../scss/global.scss */
+.g-box, .g-sdbox { border-color: #d1d1d1; background-color: #fff; }
+
+/* 辅助内容区块 */
+/* line 53, ../scss/global.scss */
+.g-asbox { margin-bottom: 10px; border-color: #afc2d1; background-color: #e6edf6; }
+
+/* 右侧主要内容区块 */
+/* line 55, ../scss/global.scss */
+.g-sdbox { padding: 0; }
+
+/* 首页banner */
+/* line 57, ../scss/global.scss */
+.g-banner { width: 100%; background-color: #e6e6e6; }
+
+/* line 58, ../scss/global.scss */
+.g-banner-ct { width: 100%; height: 334px; background: url("../img/banner/index-banner.jpg"); }

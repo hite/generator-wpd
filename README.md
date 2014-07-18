@@ -67,7 +67,7 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
-**Release log @2014-7-14 in version 0.2.0 (just about desktop-basic generator )**
+**Release log @2014-7-18 in version 0.2.0 (just about desktop-basic generator )**
 
 + rewrite the `yo wpd:desktop-basic` flow of installation . Add few questions about Ruby installation and CodeSinppet installation in WebStrom or SublimeText.
 + add static server which surpports ftl files parsing and ajax-server emulator . More about [grunt-localserver](https://www.npmjs.org/package/grunt-localserver)

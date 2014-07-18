@@ -21,7 +21,7 @@
 	"browser": true,
 	"jquery": true,
 	"predef": [
-		"shark","alert"
+		"shark","alert","jQuery","window"
 	],
 
 	"node": true

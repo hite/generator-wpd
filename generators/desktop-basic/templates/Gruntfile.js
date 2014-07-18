@@ -6,61 +6,35 @@ module.exports = function(grunt) {
         // Task configuration.
         jshint: {
             options: {
-                curly: true,
-                eqeqeq: true,
-                immed: true,
-                latedef: true,
-                newcap: true,
-                noarg: true,
-                sub: true,
-                undef: true,
-                unused: true,
-                boss: true,
-                eqnull: true,
-                browser: true,
-                globals: {
-                    jQuery: true
-                }
+                jshintrc : true
             },
             gruntfile: {
                 src: 'Gruntfile.js'
             },
             lib_test: {
-                src: ['lib/**/*.js', 'test/**/*.js']
-            }
-        },
-        qunit: {
-            files: ['test/**/*.html']
-        },
-        freemarker: {
-            options: {
-                views: 'WEB-INF/tmpl',
-                out: 'html'
-            },
-            src: 'mock/*.js'
-        },
-        compass: {
-            dist: {
-                options: {
-                    config: './style/config.rb'
-                }
+                src: ['js/**/*.js', 'test/**/*.js']
             }
         },
         exec: {
             compilesass: {
-                command: 'compass compile style/',
+                /**https://github.com/hite/generator-wpd/wiki/%E5%A6%82%E4%BD%95%E5%9C%A8sass%E4%B8%AD%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8autosprite*/
+                command: 'chcp 65001 && compass compile style/',
                 stdout: false,
                 stderr: false
             }
         },
-        connect: {
-            server: {
-                options: {
-                    port: 8008,
-                    hostname: '127.0.0.1',
-                    keepalive: true,
-                    livereload: false,
-                    open: 'http://127.0.0.1:8008/html/html/welcome.html'
+        localserver: {
+            options: {
+                configFile: 'mock/project_config.cfg',
+                port: 8081
+            }
+        },
+        open: {
+            delayed: {
+                path: 'http://127.0.0.1:8081/demo',
+                // app: 'Chrome',
+                options:{
+                    delay:2/* seconds**/
                 }
             }
         },
@@ -71,17 +45,17 @@ module.exports = function(grunt) {
             },
             lib_test: {
                 files: '<%= jshint.lib_test.src %>',
-                tasks: ['jshint:lib_test', 'qunit']
+                tasks: ['jshint:lib_test']
             }
         }
     });
 
 
-    grunt.loadNpmTasks('grunt-freemarker');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-localserver');
+    grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     // Default task.
-    grunt.registerTask('default', ['jshint', 'qunit']);
-    grunt.registerTask('buildDemo', ['freemarker', 'exec:compilesass', 'connect']);
+    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('rundemo', ['localserver', 'exec:compilesass', 'connect']);
 };

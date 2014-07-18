@@ -1,3 +1,8 @@
 node_modules/
 generators/mobile-basic/templates/bower_components/
 temp/
+bower_components/
+.idea/
+generators/desktop-basic/templates/.sass-cache/
+generators/desktop-basic/templates/style/.sass-cache/e53de788f46b179365c799f4673a003994b406bc/global.scssc
+generators/desktop-basic/templates/style/.sass-cache/

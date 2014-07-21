@@ -1,0 +1,16 @@
+{
+    'sid': 'TAyQnVSSZHKgOiUDulSSWYFFiUogzVnl',
+    'gTitle' : '测试页面',
+    'product': 'mail',
+    'realHost': 'cwebmail.mail.163.com',
+    'signatures': [{'name' : 'hero'}, {'name' : 'yang'}],
+    'user': {
+        'name' : 'Hello world !',
+        'lockStatus': {
+            'disabled': false,
+            'fids': [1,3,4],
+            'items': [],
+            'nfLocked': false
+        }
+    }
+}

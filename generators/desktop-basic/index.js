@@ -53,7 +53,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
     },
     installDevTool : function(){
         var asyn = this.async();
-        this.log('The following tools or extension for chrome is helpful to higher productive.');
+        this.log('The following tools or extension for chrome is helpful to higher productiveness.');
         this.log(info('xPath-finder,a chrome extension to find DOM using xpath language.'));
         var prompts = [{
             type: 'confirm',

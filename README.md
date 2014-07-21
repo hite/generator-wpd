@@ -38,10 +38,10 @@ To install generator-wpd from npm, run:
 $ npm install -g generator-wpd
 ```
 
-Finally, initiate the generator in some directory your project resides (by now only mobile-basic is available):
+Finally, initiate the generator in some directory your project resides (by now desktop-basic and mobile-basic are available):
 
 ```bash
-$ yo wpd:mobile-basic
+$ yo wpd:mobile-basic # yo wpd:desktop-basic
 ```
 
 And now, you enter into the app directory to start coding. That is fast and esay.
@@ -67,6 +67,15 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
+**Release log @2014-7-21 in version 0.2.1 **
+
++ fix grunt-localserver config errors. now grunt rundemo works properly in both generators.
++ add static server to mobile-basic generator . More about grunt-localserver
++ remove GMU static directory , replace with bower import in generator mobile-basic
++ add missing packages in package.json of mobile-basic
++ simply yo wpd:mobile-basic flow of installation
++ add scss demo files in generator mobile-basic
+
 **Release log @2014-7-18 in version 0.2.0 (just about desktop-basic generator )**
 
 + rewrite the `yo wpd:desktop-basic` flow of installation . Add few questions about Ruby installation and CodeSinppet installation in WebStrom or SublimeText.
@@ -89,7 +98,7 @@ And now, you enter into the app directory to start coding. That is fast and esay
 ## License
 
 MIT
-------------------------
+
 
 [bootstrap]: http://getbootstrap.com/2.3.2 
 [grunt]: http://gruntjs.org 

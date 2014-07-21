@@ -67,7 +67,8 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
-**Release log @2014-7-21 in version 0.2.1 **
+
+**Release log @2014-7-21 in version 0.2.1**
 
 + fix grunt-localserver config errors. now grunt rundemo works properly in both generators.
 + add static server to mobile-basic generator . More about grunt-localserver

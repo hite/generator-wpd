@@ -74,8 +74,9 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + add static server to mobile-basic generator . More about grunt-localserver
 + remove GMU static directory , replace with bower import in generator mobile-basic
 + add missing packages in package.json of mobile-basic
-+ simply yo wpd:mobile-basic flow of installation
++ simply `yo wpd:mobile-basic` flow of installation
 + add scss demo files in generator mobile-basic
++ enable weinre and watch function  running in concurrent
 
 **Release log @2014-7-18 in version 0.2.0 (just about desktop-basic generator )**
 

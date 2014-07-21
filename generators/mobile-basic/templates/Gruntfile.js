@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
         jshint: {
             options: {
-                jshintrc : true
+                jshintrc: true
             },
             gruntfile: {
                 src: 'Gruntfile.js'
@@ -32,8 +32,8 @@ module.exports = function(grunt) {
             delayed: {
                 path: 'http://127.0.0.1:8081/demo',
                 app: 'Chrome',
-                options:{
-                    delay:2/* seconds**/
+                options: {
+                    delay: 2 /* seconds**/
                 }
             }
         },
@@ -59,6 +59,24 @@ module.exports = function(grunt) {
                 }
             }
         },
+        // debug
+        weinre: {
+            dev: {
+                options: {
+                    httpPort: 9922,
+                    boundHost: '-all-'
+                }
+            }
+        },
+        concurrent: {
+            dev: {
+                tasks: ['localserver', 'watch','weinre'],
+                options: {
+                    logConcurrentOutput: true,
+                    limit: 3
+                }
+            }
+        },
         watch: {
             all: {
                 files: ['../js/**/*', '../style/**/*', '../WEB-INF/tmpl/**']
@@ -75,8 +93,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-manifest');
     grunt.loadNpmTasks('grunt-cmd-transport');
+    // debug
+    grunt.loadNpmTasks('grunt-weinre');
+    grunt.loadNpmTasks('grunt-concurrent');
 
-    grunt.registerTask('rundemo', [ 'exec:compilesass', 'open','localserver']);
+    grunt.registerTask('rundemo', ['exec:compilesass', 'open', 'concurrent:dev']);
     grunt.registerTask('build', ['transport']);
     grunt.registerTask('default', ['watch']);
 };

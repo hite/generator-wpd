@@ -20,6 +20,7 @@
         "grunt-open": "^0.2.3",
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-cmd-transport": "^0.4.1",
-        "grunt-manifest": "^0.4.0"
+        "grunt-manifest": "^0.4.0",
+        "grunt-concurrent": "^0.5.0"
     }
 }

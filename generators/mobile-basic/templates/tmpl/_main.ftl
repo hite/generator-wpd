@@ -14,8 +14,6 @@
         <link href="style/base.css" rel="stylesheet" type="text/css"/>
         <!-- Include the compiled Ratchet CSS -->
         <link href="bower_components/ratchet2/dist/css/ratchet.css" rel="stylesheet">
-        <!-- Include the compiled Ratchet JS -->
-        <script src="ratchet.js"></script>
         <!--[if IE]>
         <script>
             document.createElement("header");

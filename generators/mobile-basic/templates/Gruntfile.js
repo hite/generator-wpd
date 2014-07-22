@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         },
         watch: {
             all: {
-                files: ['../js/**/*', '../style/**/*', '../WEB-INF/tmpl/**']
+                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
             },
             options: {
                 livereload: true
@@ -104,7 +104,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concurrent');
 
     grunt.registerTask('debugdemo', ['exec:compilesass', 'open', 'concurrent:dev']);
-    grunt.registerTask('rundemo', ['exec:compilesass', 'open:demo']);
     grunt.registerTask('build', ['transport']);
     grunt.registerTask('default', ['watch']);
 };

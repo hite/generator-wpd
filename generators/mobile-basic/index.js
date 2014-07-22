@@ -43,6 +43,9 @@ var WpdGenerator = yeoman.generators.Base.extend({
         this.mkdir('misc');
         this.directory('misc/', 'misc/');
     },
+    copyHTMLDEMO : function () {
+        this.directory('html/', 'html/');
+    },
     copyStyle : function () {
         this.directory('style/', 'style/')
     },

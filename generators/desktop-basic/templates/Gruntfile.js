@@ -46,6 +46,12 @@ module.exports = function(grunt) {
             lib_test: {
                 files: '<%= jshint.lib_test.src %>',
                 tasks: ['jshint:lib_test']
+            },
+            all: {
+                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
+            },
+            options: {
+                livereload: true
             }
         }
     });

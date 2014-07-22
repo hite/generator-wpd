@@ -1,7 +1,7 @@
 {
     "name": "mobile-basic",
     "version": "0.0.1",
-    "description": "seed to create basic website using seajs, SASS, zepto, gmu etc. ",
+    "description": "seed to create basic website using seajs, ratchet2, SASS, zepto, gmu etc. ",
     "main": "index.js",
     "scripts": {
         "test": "mocha"
@@ -21,6 +21,7 @@
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-cmd-transport": "^0.4.1",
         "grunt-manifest": "^0.4.0",
-        "grunt-concurrent": "^0.5.0"
+        "grunt-concurrent": "^0.5.0",
+        "grunt-weinre": "0.0.2"
     }
 }

@@ -29,11 +29,18 @@ module.exports = function(grunt) {
             }
         },
         open: {
-            delayed: {
+            demo: {
                 path: 'http://127.0.0.1:8081/demo',
                 app: 'Chrome',
                 options: {
                     delay: 2 /* seconds**/
+                }
+            },
+            debug: {
+                path: 'http://127.0.0.1:9922/client/#anonymous',
+                app: 'Chrome',
+                options: {
+                    delay: 4 /* seconds**/
                 }
             }
         },
@@ -72,8 +79,7 @@ module.exports = function(grunt) {
             dev: {
                 tasks: ['localserver', 'watch','weinre'],
                 options: {
-                    logConcurrentOutput: true,
-                    limit: 3
+                    logConcurrentOutput: true
                 }
             }
         },
@@ -97,7 +103,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-weinre');
     grunt.loadNpmTasks('grunt-concurrent');
 
-    grunt.registerTask('rundemo', ['exec:compilesass', 'open', 'concurrent:dev']);
+    grunt.registerTask('debugdemo', ['exec:compilesass', 'open', 'concurrent:dev']);
+    grunt.registerTask('rundemo', ['exec:compilesass', 'open:demo']);
     grunt.registerTask('build', ['transport']);
     grunt.registerTask('default', ['watch']);
 };

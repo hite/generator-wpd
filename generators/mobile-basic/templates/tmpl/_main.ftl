@@ -25,8 +25,8 @@
         <![endif]-->
 
         <script src="http://<%=serverIP%>:9922/target/target-script-min.js#anonymous"></script>
-        <script src="http://<%=serverIP%>:35729/livereload.js"></script>
         <!--
+        <script src="http://<%=serverIP%>:35729/livereload.js"></script>
         <script src="http://jsconsole.com/remote.js?9C92D5FE-43C0-4A30-BA95-F531E46B9271"></script>
         -->
     </head>
@@ -34,26 +34,26 @@
     <div>
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
-            <h1 class="title">Ratchet</h1>
+            <h1 class="title">布局和组件示例</h1>
         </header>
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
-            <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
+            <p class="content-padded">下面的例子，一部分来自旧项目；一部分来自GMU的组件演示；一部分来自ratchet的布局演示；</p>
             <div class="card">
                 <ul class="table-view">
                     <li class="table-view-cell">
-                        <a class="push-right" href="http://goratchet.com">
-                            <strong>Ratchet documentation</strong>
+                        <a class="push-right" href="/html/demo/gmu_dialogbox.html">
+                            <strong>GMU里的对话框演示</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">
                         <a class="push-right" href="https://github.com/twbs/ratchet/">
-                            <strong>Ratchet on Github</strong>
+                            <strong>Ratchet的topbar和下面scroll布局</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">
                         <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
-                            <strong>Ratchet Google group</strong>
+                            <strong>imgView演示</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">

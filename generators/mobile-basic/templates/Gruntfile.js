@@ -77,9 +77,10 @@ module.exports = function(grunt) {
         },
         concurrent: {
             dev: {
-                tasks: ['localserver', 'watch','weinre'],
+                tasks: ['localserver','weinre'],
                 options: {
-                    logConcurrentOutput: true
+                    logConcurrentOutput: true,
+                    limit : 3
                 }
             }
         },
@@ -103,7 +104,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-weinre');
     grunt.loadNpmTasks('grunt-concurrent');
 
-    grunt.registerTask('debugdemo', ['exec:compilesass', 'open', 'concurrent:dev']);
+    grunt.registerTask('rundemo', ['exec:compilesass', 'open', 'concurrent:dev']);
     grunt.registerTask('build', ['transport']);
     grunt.registerTask('default', ['watch']);
 };

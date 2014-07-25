@@ -30,14 +30,14 @@ module.exports = function(grunt) {
         },
         open: {
             demo: {
-                path: 'http://127.0.0.1:8081/demo',
+                path: 'http://demo.mail.163.com:8081/demo',
                 app: 'Chrome',
                 options: {
                     delay: 2 /* seconds**/
                 }
             },
             debug: {
-                path: 'http://127.0.0.1:9922/client/#anonymous',
+                path: 'http://demo.mail.163.com:9922/client/#anonymous',
                 app: 'Chrome',
                 options: {
                     delay: 4 /* seconds**/

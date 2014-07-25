@@ -39,16 +39,36 @@
 <div>
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
-        <h1 class="title">gmu弹窗示例</h1>
+        <h1 class="title">gmu slider 演示</h1>
     </header>
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
         <p class="content-padded">
-            实现登录新帮助中心
+            welcome to read me.
         </p>
-        <div class="b-demo-wrap">
-            <button class="btn btn btn-positive js-pop-trigger">打开一个登陆窗口</button>
+        <div id="slider">
+            <div>
+                <a href="http://www.baidu.com/"><img lazyload="images/image(5).jpg"></a>
+                <p>1,让Coron的太阳把自己晒黑—小天</p>
+            </div><div>
+            <a href="http://www.baidu.com/"><img lazyload="images/image(6).jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
+        </div><div>
+            <a href="http://www.baidu.com/"><img lazyload="images/image(7).jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
+        </div><div>
+            <a href="http://www.baidu.com/"><img lazyload="images/image(8).jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
+        </div><div>
+            <a href="http://www.baidu.com/"><img lazyload="images/image(9).jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
+        </div><div>
+            <a href="http://www.baidu.com/"><img lazyload="images/image(10).jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
         </div>
+
+        </div>
+
 
     </div>
 </div>
@@ -66,32 +86,8 @@
 <!--jsmerge_end:app.js-->
 
 <script type="text/javascript">
-    var pop = new gmu.Dialog(null, {
-        autoOpen:false,
-        closeBtn: false,
-        title:'登录网易通行证',
-        content : '<div id="dialog1" title="登录提示">\
-                <p>输入完整的urs地址</p>\
-                <div><form class="input-group" action="https://reg.163.com/logins.jsp" method="post">\
-                  <input type="email" placeholder="网易通行证地址" name="username">\
-                  <input type="password" placeholder="网易通行证地址密码" name="password">\
-                  <input id="product" type="hidden" name="product" value="mail163" />\
-                  <input id="url" type="hidden" name="url" value="http://help.mail.163.com/index.do" />\
-                </form>\
-                </div>\
-            </div>',
-        buttons: {
-            '取消': function() {
-                this.close();
-            },
-            '确定': function() {
-                this.getEl().find('form').submit()
-            }
-        }
-    });
-    //
-    $('.js-pop-trigger').on('click', function() {
-        pop.open();
+    $('#slider').slider({
+        autoPlay : true
     });
 </script>
 </body>

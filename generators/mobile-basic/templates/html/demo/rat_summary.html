@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<!-- manifest="/misc/sp.manifest" -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="gray" />
+    <title>页面smart版本</title>
+    <link href="bower_components/gmu/dist/reset.css" rel="stylesheet" type="text/css" />
+    <link href="bower_components/gmu/dist/gmu.css" rel="stylesheet" type="text/css" />
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="bower_components/ratchet2/dist/css/ratchet.css" rel="stylesheet">
+    <!--[if IE]>
+    <script>
+        document.createElement("header");
+        document.createElement("footer");
+        document.createElement("nav");
+        document.createElement("article");
+        document.createElement("section");
+    </script>
+    <![endif]-->
+    <script src="http://10.240.136.154:9922/target/target-script-min.js#anonymous"></script>
+
+    <!--
+        <script src="http://10.240.136.154:35729/livereload.js"></script>
+        <script src="http://jsconsole.com/remote.js?9C92D5FE-43C0-4A30-BA95-F531E46B9271"></script>
+        -->
+</head>
+
+<body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">附件预览，压缩文件夹界面</h1>
+    </header>
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <ul class="table-view">
+            <li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=10">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(10).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=3">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(3).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=4">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(4).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=5">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(5).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=6">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(6).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=7">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(7).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                       </div>
+                </a>
+            </li><li class="table-view-cell media">
+                <a class="navigate-right" data-ignore="push" href="imgviewer.html?o=8">
+                    <img class="media-object pull-left" style="max-width: 100px;" src="images/image(8).jpg">
+                    <div class="media-body">
+                        01简约邮视觉规范_色系.png 。33K
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!--jsmerge_begin:c0.js-->
+    <script type="text/javascript" src="bower_components/gmu/dist/zepto.js"></script>
+    <script type="text/javascript" src="bower_components/ratchet2/dist/js/ratchet.js"></script>
+    <script type="text/javascript" src="bower_components/gmu/dist/gmu.js"></script>
+    <script type="text/javascript" src="bower_components/seajs/dist/sea.js"></script>
+    <!--jsmerge_end:c0.js-->
+
+    <!--jsmerge_begin:app.js-->
+    <script type="text/javascript" src="js/app/util.js"></script>
+    <script type="text/javascript" src="js/app/ajax.js"></script>
+    <script type="text/javascript" src="js/app/main.js"></script>
+    <!--jsmerge_end:app.js-->
+
+    <script type="text/javascript">
+    var pop = new gmu.Dialog(null, {
+        autoOpen: false,
+        closeBtn: false,
+        title: '登录网易通行证',
+        content: '<div id="dialog1" title="登录提示">\
+                <p>输入完整的urs地址</p>\
+                <div><form class="input-group" action="https://reg.163.com/logins.jsp" method="post">\
+                  <input type="email" placeholder="网易通行证地址" name="username">\
+                  <input type="password" placeholder="网易通行证地址密码" name="password">\
+                  <input id="product" type="hidden" name="product" value="mail163" />\
+                  <input id="url" type="hidden" name="url" value="http://help.mail.163.com/index.do" />\
+                </form>\
+                </div>\
+            </div>',
+        buttons: {
+            '取消': function() {
+                this.close();
+            },
+            '确定': function() {
+                this.getEl().find('form').submit()
+            }
+        }
+    });
+    //
+    $('.js-pop-trigger').on('click', function() {
+        pop.open();
+    });
+    </script>
+</body>
+
+</html>

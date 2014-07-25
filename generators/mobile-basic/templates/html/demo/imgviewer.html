@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!-- manifest="/misc/sp.manifest" -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="gray" />
+    <title>查看大图</title>
+</head>
+
+<body>
+
+        <script type="text/javascript">
+        document.body.onload = function(){
+            var i = window.location.search.replace('?o=','');
+            document.write('<img src="images/image('+i+').jpg">')
+        }
+        </script>
+        
+
+</body>
+
+</html>

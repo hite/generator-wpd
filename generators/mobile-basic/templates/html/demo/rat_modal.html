@@ -9,9 +9,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="gray" />
     <title>页面smart版本</title>
-    <link href="bower_components/gmu/dist/reset.css" rel="stylesheet" type="text/css" />
-    <link href="bower_components/gmu/dist/gmu.css" rel="stylesheet" type="text/css" />
-    <link href="style/base.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .b-demo-wrap {
             padding: 5px;
@@ -19,6 +16,7 @@
     </style>
     <!-- Include the compiled Ratchet CSS -->
     <link href="bower_components/ratchet2/dist/css/ratchet.css" rel="stylesheet">
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
     <script>
         document.createElement("header");
@@ -40,35 +38,25 @@
 
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
-        <h1 class="title">gmu slider 演示</h1>
+        <h1 class="title">ratchet modals 演示</h1>
     </header>
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
         <p class="content-padded">
-            welcome to read me.
+            click and see
         </p>
-       <div id="slider">
-  <div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(5).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div><div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(6).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div><div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(7).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div><div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(8).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div><div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(9).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div><div>
-      <a href="http://www.baidu.com/"><img lazyload="images/image(10).jpg"></a>
-      <p>1,让Coron的太阳把自己晒黑—小天</p>
-  </div>
+        <a href="#myModalexample" class="btn">Open modal</a>
+<div id="myModalexample" class="modal">
+  <header class="bar bar-nav">
+    <a class="icon icon-close pull-right" href="#myModalexample"></a>
+    <h1 class="title">Modal</h1>
+  </header>
 
+  <div class="content">
+    <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+  </div>
 </div>
+
 
 
     </div>
@@ -76,7 +64,6 @@
 <!--jsmerge_begin:c0.js-->
 <script type="text/javascript" src="bower_components/gmu/dist/zepto.js"></script>
 <script type="text/javascript" src="bower_components/ratchet2/dist/js/ratchet.js"></script>
-<script type="text/javascript" src="bower_components/gmu/dist/gmu.js"></script>
 <script type="text/javascript" src="bower_components/seajs/dist/sea.js"></script>
 <!--jsmerge_end:c0.js-->
 
@@ -87,9 +74,7 @@
 <!--jsmerge_end:app.js-->
 
 <script type="text/javascript">
-    $('#slider').slider({
-        autoPlay : true
-    });
+
 </script>
 </body>
 

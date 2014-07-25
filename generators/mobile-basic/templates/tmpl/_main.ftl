@@ -31,7 +31,6 @@
         -->
     </head>
     <body>
-    <div>
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
             <h1 class="title">布局和组件示例</h1>
@@ -42,29 +41,64 @@
             <div class="card">
                 <ul class="table-view">
                     <li class="table-view-cell">
-                        <a class="push-right" href="gmu_dialogbox.html">
-                            <strong>gmu里的对话框演示</strong>
+                        <a data-ignore="push" class="push-right" href="rat_push.html">
+                            <strong>Ratchet 局部页面跳转 演示</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">
-                        <a class="push-right" href="rat_slider.html">
-                            <strong>Ratchet的silder演示</strong>
+                        <a data-ignore="push" class="push-right" href="gmu_dialogbox.html">
+                            <strong>gmu 对话框演示</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">
-                        <a class="push-right" href="gmu_slider.html">
-                            <strong>gmu的slider演示</strong>
+                        <a data-ignore="push" class="push-right" href="rat_summary.html">
+                            <strong>Ratchet 列表摘要演示</strong>
                         </a>
                     </li>
                     <li class="table-view-cell">
-                        <a class="push-right" href="https://twitter.com/goratchet">
-                            <strong>Ratchet on Twitter</strong>
+                        <a data-ignore="push" class="push-right" href="gmu_refresh.html">
+                            <strong>gmu twitter式分页</strong>
+                        </a>
+                    </li>
+                    <li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="rat_slider.html">
+                            <strong>Ratchet silder演示</strong>
+                        </a>
+                    </li>
+                    <li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_slider.html">
+                            <strong>gmu slider演示</strong>
+                        </a>
+                    </li>
+                    <li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="rat_modal.html">
+                            <strong>Ratchet modals弹窗演示</strong>
+                        </a>
+                    </li>
+                    <li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_history.html">
+                            <strong>gmu histroy list演示</strong>
+                        </a>
+                    </li><li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_history.html">
+                            <strong>gmu histroy list演示</strong>
+                        </a>
+                    </li><li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_history.html">
+                            <strong>gmu histroy list演示</strong>
+                        </a>
+                    </li><li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_history.html">
+                            <strong>gmu histroy list演示</strong>
+                        </a>
+                    </li><li class="table-view-cell">
+                        <a data-ignore="push" class="push-right" href="gmu_history.html">
+                            <strong>gmu histroy list演示</strong>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
     <!--jsmerge_begin:c0.js-->
     <script type="text/javascript" src="bower_components/gmu/dist/zepto.js"></script>
     <script type="text/javascript" src="bower_components/ratchet2/dist/js/ratchet.js"></script>

@@ -45,6 +45,9 @@ $ yo wpd:mobile-basic # yo wpd:desktop-basic
 ```
 
 And now, you enter into the app directory to start coding. That is fast and esay.
+
+The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
+
 ### About generator submodules
 > mobile-basic
   

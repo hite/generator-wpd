@@ -16,7 +16,6 @@
         "grunt": "^0.4.5",
         "grunt-localserver": "^1.0.4",
         "grunt-exec": "^0.4.6",
-        "grunt-contrib-watch": "^0.6.1",
         "grunt-open": "^0.2.3",
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-cmd-transport": "^0.4.1",

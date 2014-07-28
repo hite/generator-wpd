@@ -67,6 +67,14 @@ And now, you enter into the app directory to start coding. That is fast and esay
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
+**Release log @2014-7-28 in version 0.2.2**
+
++ add fake domain `demo.mail.163.com`. please make sure 'demo.mail.163.com 120.0.0.1' is in your hosts
++ remove grunt-contrib-watch package because of grunt localserver doesn't support watch function.
++ add demo written with Ratchet framework and GMU.
++ fix some bower dependencies (seajs, gmu etc.)
++ add **common** directory
+
 
 **Release log @2014-7-21 in version 0.2.1**
 

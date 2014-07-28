@@ -83,17 +83,17 @@ module.exports = function(grunt) {
                     limit : 3
                 }
             }
-        },
-        watch: {
-            all: {
-                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
-            },
-            options: {
-                livereload: true
-            }
+//        },
+//        watch: {
+//            all: {
+//                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
+//            },
+//            options: {
+//                livereload: true
+//            }
         }
     });
-    grunt.loadNpmTasks('grunt-contrib-watch');
+//    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-localserver');
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-exec');

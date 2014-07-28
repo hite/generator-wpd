@@ -26,7 +26,7 @@
         document.createElement("section");
     </script>
     <![endif]-->
-        <script src="http://10.240.136.154:9922/target/target-script-min.js#anonymous"></script>
+    <script src="http://10.240.136.154:9922/target/target-script-min.js#anonymous"></script>
 
     <!--
         <script src="http://10.240.136.154:35729/livereload.js"></script>
@@ -36,30 +36,30 @@
 
 <body>
 
-    <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-        <h1 class="title">ratchet modals 演示</h1>
-    </header>
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-        <p class="content-padded">
-            click and see
-        </p>
-        <a href="#myModalexample" class="btn">Open modal</a>
-<div id="myModalexample" class="modal">
-  <header class="bar bar-nav">
-    <a class="icon icon-close pull-right" href="#myModalexample"></a>
-    <h1 class="title">Modal</h1>
-  </header>
+<!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+    <h1 class="title">ratchet modals 演示</h1>
+</header>
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content" style="z-index:12;background-color: transparent;">
+    <p class="content-padded">
+        click and see
+    </p>
+    <a href="#myModalexample" class="btn">Open modal</a>
+    <div id="myModalexample" class="modal">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#myModalexample"></a>
+            <h1 class="title">Modal</h1>
+        </header>
 
-  <div class="content">
-    <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-  </div>
-</div>
-
-
-
+        <div class="content">
+            <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+        </div>
     </div>
+
+
+
+</div>
 
 <!--jsmerge_begin:c0.js-->
 <script type="text/javascript" src="bower_components/gmu/dist/zepto.js"></script>

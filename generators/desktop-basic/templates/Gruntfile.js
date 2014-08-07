@@ -63,5 +63,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     // Default task.
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('rundemo', ['exec:compilesass', 'open'，'localserver']);
+    grunt.registerTask('rundemo', ['exec:compilesass', 'open', 'localserver']);
 };

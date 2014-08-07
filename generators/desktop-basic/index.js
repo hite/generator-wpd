@@ -121,8 +121,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
                 that.log('jar settings folder to settings.jar, and import settings into WebStrom ')
             }else{
                 that.directory('code_snippet/WPD-CodeSnippet','code_snippet/WPD-CodeSnippet')
-                that.log('Copy WPD-CodeSnippet directory to sublime-text Package directory, ' +
-                    'for example "C:/Users/[USERNAME]/AppData/Roaming/Sublime Text 3/Packages" ')
+                that.log(' After scaffolding is completed ,run `grunt importcode` tast');
             }
         }
         var asyn = this.async();

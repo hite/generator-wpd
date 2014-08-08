@@ -1,3 +1,27 @@
 /* 整体框架结构(主内容区高度自适应)
 ------------------- */
-html,body{height: 100%;text-align: center;overflow: hidden;}
+.w-tiles {}
+.w-tiles li {
+  text-align: left;
+  vertical-align: middle;
+  float: left;
+  margin: 5px;
+  list-style: none;
+}
+.w-tiles li img {
+  width: 100px;
+  height: 100px;
+}
+.w-tile * {
+  display: block;
+}
+.w-tile span {
+  text-align: center;
+}
+.w-image-viewer img {
+  max-width: 100%;
+}
+.b-original-img-wrap{
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+}

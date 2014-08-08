@@ -1,4 +1,7 @@
-<#include "lib/htmltag.ftl">
+    <#include "lib/htmltag.ftl">
+    <#include "pages/typelist.ftl">
+    <#include "pages/detail.ftl">
+
     <!DOCTYPE html>
     <html>
     <!-- manifest="${contextPath}/misc/sp.manifest" -->
@@ -28,69 +31,55 @@
         -->
     </head>
     <body>
+    <div class="w-loading" id="js-loading"></div>
     <div class="app-page" data-page="home">
         <div class="app-topbar">
-            <div class="app-title">2014何塞摄影作品展</div>
+            <div class="app-title">必应图片图库</div>
         </div>
         <div class="app-content">
+            <div style="background-color: antiquewhite;padding: 15px;font-size: 18px;color: cadetblue;" >
+必应缤纷桌面是微软必应（Bing）搜索推出的新一代桌面客户端。搜索从桌面开始！还可将必应美图设为桌面壁纸，精彩每一天！
+
+
+版本号：1.3.825
+
+支持Win XP/ Win7/ Win8
+
+更新日期：2014年3月25日，9.4M
+
+            </div>
             <!-- in your app-content -->
-            <ul class="w-tiles">
+            <ul class="w-tiles js-tile-list">
                 <li class="w-tile">
                     <span>类型1</span>
                     <img class="js-view-list"  data-target-args="2" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280871236906281.jpg" >
-                </li><li class="w-tile">
-                <span>类型1</span>
-                <img class="js-view-list"  data-target-args="2" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280871236906281.jpg" >
-            </li><li class="w-tile">
-                <span>类型1</span>
-                <img class="js-view-list"  data-target-args="2" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280871236906281.jpg" >
+                </li>
+                <li class="w-tile">
+                    <span>类型1</span>
+                    <img class="js-view-list"  data-target-args="2" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280871236906281.jpg" >
+                </li>
+                
+            </ul>
+        </div>
+        <script type="text/_-template" id="js-type-list-tmpl">
+            <li class="w-tile">
+                <span><%=typeName%></span>
+                <img class="js-view-list" data-target-args="<%=typeId%>" src="<%=typeIco|| 'http://i.ssimg.cn/guancha/News/2014/02/15/635280871236906281.jpg'%>" ></img>
             </li>
-            </ul>
-        </div>
+        </script>
     </div>
 
-    <div class="app-page" data-page="typelist">
-        <div class="app-topbar">
-            <div class="app-title">类型1</div>
-        </div>
-        <div class="app-content">
-            <div class="app-button" data-back>返回到类型选择</div>
-            <ul class="w-image-list">
-                <li>Cats</li>
-                <li class="w-image-viewer">
-                    <img class="js-view-detail" data-imageid="3" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280862180778375.jpg">
-                </li>
-                <li>Apples</li>
-                <li class="w-image-viewer">
-                    <img class="js-view-detail" data-imageid="3" src="http://img.guancha.cn/guancha/News/big/2014/02/15/635280861539617249.jpg">
-                </li>
-                <li>Oranges</li>
-                <li class="w-image-viewer">
-                    <img class="js-view-detail" data-imageid="3" src="http://i.ssimg.cn/guancha/News/2014/02/15/635280854772325363.jpg">
-                </li>
-            </ul>
-        </div>
-    </div>
+    <@typelist></@typelist>
+    <@detail></@detail>
 
-    <div class="app-page" data-page="detail">
-        <div class="app-topbar">
-            <div class="app-button" data-back>返回到列表选择</div>
-        </div>
-        <div class="app-content">
-            <p>
-                John Stanmeyer：当代热点类单幅一等奖——信号：2013年2月26日晚，吉布提的海岸，非洲移民举起手机接收来自索马里的廉价信号来联系海外的亲人。吉布提是索马里、埃塞俄比亚和厄立特里亚移民的中转站，移民们想到欧洲和中东寻求更好的生活。国家地理美国籍摄影师John Stanmeyer
-            </p>
-            <div class="b-original-img-wrap">
-                <img src="http://i.ssimg.cn/guancha/News/2014/02/15/635280854772325363.jpg">
-            </div>
-        </div>
-    </div>
+    
     <!--jsmerge_begin:c0.js-->
     <script type="text/javascript" src="bower_components/zeptojs/src/zepto.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/ajax.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/event.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/touch.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/data.js"></script>
+    <script type="text/javascript" src="bower_components/zeptojs/src/callbacks.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/deferred.js"></script>
     <script type="text/javascript" src="bower_components/zeptojs/src/selector.js"></script>
     <script type="text/javascript" src="bower_components/appjs/dist/app.js"></script>
@@ -135,7 +124,8 @@
             // 文件编码
             charset: 'utf-8'
         });
-        //
+        // 
+        var gContextPath = "${contextPath}";
         // 加载入口模块
         $(function () {// onload
             seajs.use('app/main', function (_main) {

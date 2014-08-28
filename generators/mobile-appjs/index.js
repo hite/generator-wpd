@@ -29,13 +29,13 @@ var WpdGenerator = yeoman.generators.Base.extend({
         this.log('>> copy tmpl files.')
         this.directory('tmpl/lib', 'WEB-INF/tmpl/lib/');
         // weinre needs the right server ip address. find it and replace;
-        var myUtil = require('../common/util');
-        var ip = myUtil.getLocalIP();
-        this.template('tmpl/_main.ftl', 'WEB-INF/tmpl/main.ftl',{
-            serverIP : ip,
-            // why underscore consider '${contextPath}' as variable insertion .It is for freemarker actually !
-            contextPath:'${contextPath}'// ugly
-        });
+        // var myUtil = require('../common/util');
+        // var ip = myUtil.getLocalIP();
+        // this.template('tmpl/_main.ftl', 'WEB-INF/tmpl/main.ftl',{
+        //     serverIP : ip,
+        //     // why underscore consider '${contextPath}' as variable insertion .It is for freemarker actually !
+        //     contextPath:'${contextPath}'// ugly
+        // });
         //
     },
     copyMisc : function () {

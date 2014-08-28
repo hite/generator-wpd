@@ -1,6 +1,6 @@
 {
   "name": "generator-wpd",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "generators/mobile-basic/index.js",
@@ -17,7 +17,7 @@
     "test": "mocha"
   },
   "files": [
-    "generators/mobile-basic","generators/desktop-basic","generators/mobile-appjs"
+    "generators/mobile-basic","generators/desktop-basic","generators/mobile-appjs","generators/common"
   ],
   "keywords": [
     "yeoman-generator"

@@ -39,15 +39,10 @@
         <div class="app-content">
             <div style="background-color: antiquewhite;padding: 15px;font-size: 18px;color: cadetblue;" >
 必应缤纷桌面是微软必应（Bing）搜索推出的新一代桌面客户端。搜索从桌面开始！还可将必应美图设为桌面壁纸，精彩每一天！
-
-
 版本号：1.3.825
-
 支持Win XP/ Win7/ Win8
-
 更新日期：2014年3月25日，9.4M
-
-            </div>
+         </div>
             <!-- in your app-content -->
             <ul class="w-tiles js-tile-list">
                 <li class="w-tile">

@@ -28,6 +28,7 @@ Generator-wpd is a project generator for wpd group aimed to quickly set up a new
 Generator-wpd includes four sub modules by now.
 
 + mobile-basic
++ mobile-appjs
 + mobile <font color=green>(coming soon)</font>
 + desktop-basic 
 + desktop <font color=green>(coming soon)</font>
@@ -53,6 +54,11 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
   
 + Aim at small project which does't have much pages. Such project page also have a simple pageflow , few widgets , basic interaction model
 + technology stack.[zepto.js](http://zeptojs.com/) for DOM\EVENT util instead of jQuery on desktop;         [GMU](http://gmu.baidu.com/) for UI library;[seajs](seajs.org) for module management ; [grunt](http://gruntjs.org) for tasks building; [mocha][] for test framework
+
+>mobile-appjs
+
++ Aim at one page on application.
++ [techology stack]. [appjs](http://code.kik.com/app/2/index.html);[seajs](seajs.org) for module management ; [grunt](http://gruntjs.org) for tasks building;
  
 > mobile
 
@@ -70,11 +76,17 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
-**Release log @2014-7-28 in version 0.2.3**
+
+**Release log @2014-09-13 in version 0.3.4**
 
 + bugfixs
 + remove some useless questions in desktop-basic
 + remove autowire ip into file for weinre support
+
+
+**Release log @2014-8-9 in version 0.3.0**
+
++ add mobile-appjs generator
 
 **Release log @2014-7-28 in version 0.2.2**
 

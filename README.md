@@ -70,6 +70,12 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog
+**Release log @2014-7-28 in version 0.2.3**
+
++ bugfixs
++ remove some useless questions in desktop-basic
++ remove autowire ip into file for weinre support
+
 **Release log @2014-7-28 in version 0.2.2**
 
 + add fake domain `demo.mail.163.com`. please make sure 'demo.mail.163.com 120.0.0.1' is in your hosts

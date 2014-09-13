@@ -51,7 +51,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
         this.log(recc('ruby 2.0.0p481 is recommended, and ruby 1.9.2 doesn\'t work well.'));
         this.directory('style/', 'style/');
     },
-    installDevTool : function(){
+    _installDevTool : function(){
         var asyn = this.async();
         this.log('The following tools or extension for chrome is helpful to higher productiveness.');
         this.log(info('xPath-finder,a chrome extension to find DOM using xpath language.'));
@@ -73,7 +73,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
         //
 
     },
-    installRuby : function(){
+    _installRuby : function(){
         var asyn = this.async();
         this.log(info('ruby, you must has ruby run-time enviroment before using sass and compass.'));
         var prompts = [{
@@ -91,7 +91,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
             asyn();
         }.bind(this));
     },
-    installCompass : function(){
+    _installCompass : function(){
         var asyn = this.async();
         this.log(info('Compass, Compass is an open-source CSS Authoring Framework.Compass uses Sass.' +
             'if you want autosprite function in scss, you should install this. '));
@@ -110,7 +110,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
             asyn();
         }.bind(this));
     },
-    copyCodeSnippet : function(){
+    _copyCodeSnippet : function(){
         var that = this;
         function installSnippet(_ide){
             that.log('>> install code snippet for ' + _ide + '.')

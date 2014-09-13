@@ -27,8 +27,7 @@ var WpdGenerator = yeoman.generators.Base.extend({
     // copy bone files directory
     copyTmpl : function () {
         this.log('>> copy tmpl files.')
-        this.directory('tmpl/lib', 'WEB-INF/tmpl/lib/');
-        this.copy('tmpl/_main.ftl', 'WEB-INF/tmpl/main.ftl');
+        this.directory('tmpl/', 'WEB-INF/tmpl/');
     },
     copyMisc : function () {
         this.log("mkdir('misc')");

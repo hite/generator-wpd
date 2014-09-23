@@ -77,6 +77,10 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
 
 ## Changlog
 
+**Release log @2014-09-23 in version 0.3.5**
+
++ bugfixs
+
 **Release log @2014-09-13 in version 0.3.4**
 
 + bugfixs

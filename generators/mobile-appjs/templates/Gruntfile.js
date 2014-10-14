@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                 }
             },
             debug: {
-                path: 'http://demo.mail.163.com:9922/client/#anonymous',
+                path: 'http://localhost:9922/client/#anonymous',
                 app: 'Chrome',
                 options: {
                     delay: 4 /* seconds**/

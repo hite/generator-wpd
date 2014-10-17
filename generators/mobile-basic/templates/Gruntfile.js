@@ -55,15 +55,26 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        concat: {
-            dialog: {
-                files: {
+        compress: {
+            main: {
+                options: {
+                    archive: 'archive.zip'
+                },
+                files: [ // includes files in path
+                    {
+                        src: ['dist/**', 'html/**', 'misc/**', 'style/**', 'web/**', 'WEB-INF/tmpl/**']
+                    }
+                ]
+            }
+        },
+        uglify: {
+            my_target: {
+                files: [{
                     expand: true,
-                    cwd: 'ts/',
-                    src: ['app/**/*.js'],
-                    dest: 'dist',
-                    ext: '.js'
-                }
+                    cwd: '_dist/',
+                    src: '*.js',
+                    dest: 'dist/'
+                }]
             }
         },
         // debug
@@ -98,8 +109,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-manifest');
     grunt.loadNpmTasks('grunt-cmd-transport');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     // debug
     grunt.loadNpmTasks('grunt-weinre');
     grunt.loadNpmTasks('grunt-concurrent');

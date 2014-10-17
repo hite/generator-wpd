@@ -12,8 +12,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="gray"/>
         <title>移动版</title>
+        <!--cssmerge_begin:core.css-->
         <link href="bower_components/appjs/dist/app.css" rel="stylesheet" type="text/css"/>
         <link href="style/css/base.css" rel="stylesheet" type="text/css"/>
+        <!--cssmerge_end:core.css-->
         <!--[if IE]>
         <script>
             document.createElement("header");
@@ -84,9 +86,9 @@
     <!--jsmerge_end:c0.js-->
 
     <!--jsmerge_begin:app.js-->
-    <script type="text/javascript" src="js/app/util.js"></script>
-    <script type="text/javascript" src="js/app/ajax.js"></script>
-    <script type="text/javascript" src="js/app/main.js"></script>
+    <script type="text/javascript" src="${jsPath}/app/util.js"></script>
+    <script type="text/javascript" src="${jsPath}/app/ajax.js"></script>
+    <script type="text/javascript" src="${jsPath}/app/main.js"></script>
     <!--jsmerge_end:app.js-->
     <script type="text/javascript">
         seajs.config({
@@ -113,8 +115,12 @@
             // 调试模式
             debug: true,
 
-            // Sea.js 的基础路径
-            base: '${contextPath}/js/',
+             // Sea.js 的基础路径
+            <#if local || test>
+                base: '${jsRoot}/js/',
+            <#else>
+                base: '${jsRoot}/dist/',
+            </#if>
 
             // 文件编码
             charset: 'utf-8'

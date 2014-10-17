@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 src: 'Gruntfile.js'
             },
             lib_test: {
-                src: ['js/**/*.js', 'test/**/*.js']
+                src: ['app/**/*.js', 'test/**/*.js']
             }
         },
         exec: {
@@ -22,6 +22,71 @@ module.exports = function(grunt) {
                 stderr: false
             }
         },
+        // deploy
+        // Before generating any new files, remove any previously-created files.
+        clean: {
+            tests: ['dist/*', 'ts/']
+        },
+        transport: {
+            all: {
+                files: [{
+                    cwd: 'js/',
+                    expand: true,
+                    src: 'app/**/*.js',
+                    filter: 'isFile',
+                    dest: 'ts/'
+                }]
+            }
+        },
+        // Configuration to be run (and then tested).
+        pack_static: {
+            custom_options: {
+                options: {
+                    separator: ';',
+                    constVar : {
+                        '${jsPath}' : 'ts',
+                        '${stylePath}': 'style'
+                    }
+                },
+                files: [{
+                    src: 'WEB-INF/tmpl/**/*.ftl'
+                }]
+            }
+        },
+        copy: {
+            dev: {
+                files: [
+                    // includes files within path and its sub-directories
+                    {
+                        src: ['WEB-INF/**','misc/**','style/img/**','misc/**','style/css/**'],
+                        dest: 'dist/'
+                    }
+                ]
+            }
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: 'archive.zip'
+                },
+                files: [ // includes files in path
+                    {
+                        src: ['dist/**']
+                    }
+                ]
+            }
+        },
+        uglify: {
+            dev: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/',
+                    src: '*.js',
+                    dest: 'dist/static'
+                }]
+            }
+        },
+        // debug
         localserver: {
             options: {
                 configFile: 'mock/project_config.cfg',
@@ -44,7 +109,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        // debug
         weinre: {
             dev: {
                 options: {
@@ -55,32 +119,27 @@ module.exports = function(grunt) {
         },
         concurrent: {
             dev: {
-                tasks: ['localserver','weinre'],
+                tasks: ['localserver', 'weinre'],
                 options: {
                     logConcurrentOutput: true,
-                    limit : 3
+                    limit: 3
                 }
             }
-//        },
-//        watch: {
-//            all: {
-//                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
-//            },
-//            options: {
-//                livereload: true
-//            }
+            //        },
+            //        watch: {
+            //            all: {
+            //                files: ['js/**/*', 'style/**/*', 'WEB-INF/tmpl/**']
+            //            },
+            //            options: {
+            //                livereload: true
+            //            }
         }
     });
-//    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-localserver');
-    grunt.loadNpmTasks('grunt-open');
-    grunt.loadNpmTasks('grunt-exec');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-manifest');
-    // debug
-    grunt.loadNpmTasks('grunt-weinre');
-    grunt.loadNpmTasks('grunt-concurrent');
+    // load all npm grunt tasks
+    require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('rundemo', ['exec:compilesass', 'open', 'concurrent:dev']);
+    grunt.registerTask('deploy', ['exec:compilesass','transport','copy:dev', 'pack_static', 'uglify', 'compress']);
+    grunt.registerTask('rundemo', ['open:demo']);
+    grunt.registerTask('debugdemo', ['exec:compilesass', 'open', 'concurrent:dev']);
     grunt.registerTask('default', ['watch']);
 };

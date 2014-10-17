@@ -19,6 +19,8 @@
         "grunt-open": "^0.2.3",
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-cmd-transport": "^0.4.1",
+        "grunt-contrib-compress": "^0.11.0",
+        "grunt-contrib-uglify": "^0.6.0",
         "grunt-manifest": "^0.4.0",
         "grunt-concurrent": "^0.5.0",
         "grunt-weinre": "0.0.2"

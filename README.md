@@ -77,6 +77,12 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
 
 ## Changlog
 
+**Release log @2014-10-17 in version 0.4.0 for mobile-appjs template**
+
++ add [grunt-pack-static](https://github.com/hite/pack-static/) supports
++ fix much config errors
++ and one-click deployment. Just hit `grunt deploy --force`
+ 
 **Release log @2014-09-23 in version 0.3.5**
 
 + bugfixs

@@ -67,12 +67,12 @@ The last keyboard hits are `grunt rundemo` ,and you will see the demo,ENJOY!
 
 >desktop-basic
 
-+ Aim at bussiness website building
++ Aim at business website building
 + technology stack.[jquery][] for DOM\EVENT util ; CSS coding using [WPD Css code style][wpdcsscode];[requirejs](http://requirejs.org) for module management ; [grunt][] for tasks building; [sharkjs][] for UI library;[mocha][] or [jasmine][] for test framework 
 
 >desktop
 
-+ Aim at flexiable configure project. use different tools chain in corroding to different bussiness system;
++ Aim at flexiable configure project. use different tools chain in corroding to different business system;
 + technology stack. [bootstrap][] or [foundation5][] for css framework; [wpdcsscode][] or [BEM][] for css code style;[grunt][] or [gulp][] for tasks building; bower for client package management;[mocha][] or [jasmine][] for test framework 
 
 ## Changlog

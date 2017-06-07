@@ -149,5 +149,5 @@ MIT
 [sharkjs]: http://sharkjs.org
 [foundation5]:http://foundation.zurb.com/develop/download.html
 [gulp]:http://gulpjs.com
-[mocha]:http://visionmedia.github.io/mocha/
+[mocha]:http://mochajs.org/
 [jasmine]:https://github.com/pivotal/jasmine
